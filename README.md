@@ -6,7 +6,6 @@ This repository contains solutions to the Data Structures and Algorithms (DSA) p
 
 - [About the Project](#about-the-project)
 - [Course Link](#course-link)
-- [Getting Started](#getting-started)
 - [Contributing](#contributing)
 - [License](#license)
 
