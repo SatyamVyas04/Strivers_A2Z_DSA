@@ -1,20 +1,21 @@
 def longestSubarrayWithSumK(a: [int], k: int) -> int:
     # Write your code here
+    left, right = 0, 0
     n = len(a)
-    preSumMap = {}
-    Sum = 0
-    maxLen = 0
-    for i in range(n):
-        Sum += a[i]
-        if Sum == k:
-            maxLen = max(maxLen, i + 1)
-        rem = Sum - k
-        if rem in preSumMap:
-            length = i - preSumMap[rem]
-            maxLen = max(maxLen, length)
-        if Sum not in preSumMap:
-            preSumMap[Sum] = i
-
-    return maxLen
+    maxlen = 0
+    s = a[0]
+    while right < n:
+        while left <= right and s > k:
+            s-=a[left]
+            left += 1
+        
+        if s == k:
+            maxlen = max(maxlen, right - left + 1)
+        
+        right += 1
+        if right < n:
+            s += a[right]
+            
+    return maxlen
 
 # Link: https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_6682399

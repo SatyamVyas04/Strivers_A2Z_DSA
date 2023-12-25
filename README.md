@@ -4,14 +4,25 @@ This repository contains solutions to the Data Structures and Algorithms (DSA) p
 
 ## Table of Contents
 
-- [About the Project](#about-the-project)
-- [Course Link](#course-link)
-- [Contributing](#contributing)
-- [License](#license)
+-   [About the Project](#about-the-project)
+-   [Important Topics](#important-topics)
+-   [Course Link](#course-link)
+-   [Contributing](#contributing)
+-   [License](#license)
 
 ## About the Project
 
 Striver's A2Z DSA Course is a comprehensive program for mastering Data Structures and Algorithms. This repository aims to provide solutions to the problems covered in the course, making it easier for learners to understand and implement these concepts.
+
+## Important Topics
+
+| Topic   | Rating     | Question                      | Solution Link                                               | Date     |
+| :------ | :--------- | :---------------------------- | :---------------------------------------------------------- | :------- |
+| Sorting | Sorting-I  | QuickSort                     | [Here](./2.%20Sorting/2.2.%20Sorting-II/4.%20QuickSort.py)  | 24th DEC |
+| Sorting | Sorting-II | MergeSort                     | [Here](./2.%20Sorting/2.2.%20Sorting-II/1.%20MergeSort.py)  | 23rd DEC |
+| Arrays  | Easy       | Traffic                       | [Here](./3.%20Arrays/3.1.%20Easy/11.%20Traffic.py)          | 25th DEC |
+| Arrays  | Easy       | LongestSubArr (2ptr Approach) | [Here](./3.%20Arrays/3.1.%20Easy/13.%20LongestSubArr.py)    | 25th DEC |
+| Arrays  | Easy       | LongestSubArr (Hash Approach) | [Here](./3.%20Arrays/3.1.%20Easy/14.%20LongestSubArrNeg.py) | 25th DEC |
 
 ## Course Link
 
