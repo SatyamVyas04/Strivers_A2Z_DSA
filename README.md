@@ -23,6 +23,8 @@ Striver's A2Z DSA Course is a comprehensive program for mastering Data Structure
 | Arrays  | Easy       | Traffic                       | [Here](./3.%20Arrays/3.1.%20Easy/11.%20Traffic.py)          | 25th DEC |
 | Arrays  | Easy       | LongestSubArr (2ptr Approach) | [Here](./3.%20Arrays/3.1.%20Easy/13.%20LongestSubArr.py)    | 25th DEC |
 | Arrays  | Easy       | LongestSubArr (Hash Approach) | [Here](./3.%20Arrays/3.1.%20Easy/14.%20LongestSubArrNeg.py) | 25th DEC |
+| Arrays  | Medium     | Kadane's Algo                 | [Here](./3.%20Arrays/3.2.%20Medium/4.%20Kadane.py)          | 26th DEC |
+| Arrays  | Medium     | Permutation                   | [Here](./3.%20Arrays/3.2.%20Medium/8.%20NextPermutation.py) | 26th DEC |
 
 ## Course Link
 
