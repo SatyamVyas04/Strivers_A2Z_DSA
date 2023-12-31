@@ -16,17 +16,25 @@ Striver's A2Z DSA Course is a comprehensive program for mastering Data Structure
 
 ## Important Topics
 
-| Topic   | Rating     | Question                      | Solution Link                                                       | Date     |
-| :------ | :--------- | :---------------------------- | :------------------------------------------------------------------ | :------- |
-| Sorting | Sorting-I  | QuickSort                     | [Here](./2.%20Sorting/2.2.%20Sorting-II/4.%20QuickSort.py)          | 24th DEC |
-| Sorting | Sorting-II | MergeSort                     | [Here](./2.%20Sorting/2.2.%20Sorting-II/1.%20MergeSort.py)          | 23rd DEC |
-| Arrays  | Easy       | Traffic                       | [Here](./3.%20Arrays/3.1.%20Easy/11.%20Traffic.py)                  | 25th DEC |
-| Arrays  | Easy       | LongestSubArr (2ptr Approach) | [Here](./3.%20Arrays/3.1.%20Easy/13.%20LongestSubArr.py)            | 25th DEC |
-| Arrays  | Easy       | LongestSubArr (Hash Approach) | [Here](./3.%20Arrays/3.1.%20Easy/14.%20LongestSubArrNeg.py)         | 25th DEC |
-| Arrays  | Medium     | Kadane's Algo                 | [Here](./3.%20Arrays/3.2.%20Medium/4.%20Kadane.py)                  | 26th DEC |
-| Arrays  | Medium     | Permutation                   | [Here](./3.%20Arrays/3.2.%20Medium/8.%20NextPermutation.py)         | 26th DEC |
-| Arrays  | Medium     | Longest Consecutive           | [Here](./3.%20Arrays/3.2.%20Medium/10.%20LongestConsecutiveLeet.py) | 27th DEC |
-| Arrays  | Medium     | SpiralMatrix                  | [Here](./3.%20Arrays/3.2.%20Medium/13.%20MatrixSpiralLeet.py)       | 27th DEC |
+| Topic   | Rating     | Question                                | Solution Link                                                       | Date          |
+| :------ | :--------- | :-------------------------------------- | :------------------------------------------------------------------ | :------------ |
+| Sorting | Sorting-I  | QuickSort Implementation                | [Here](./2.%20Sorting/2.2.%20Sorting-II/4.%20QuickSort.py)          | 23rd Dec 2023 |
+| Sorting | Sorting-II | MergeSort Implementation                | [Here](./2.%20Sorting/2.2.%20Sorting-II/1.%20MergeSort.py)          | 24th Dec 2023 |
+| Arrays  | Easy       | Traffic (M bit Change Problem)          | [Here](./3.%20Arrays/3.1.%20Easy/11.%20Traffic.py)                  | 25th Dec 2023 |
+| Arrays  | Easy       | LongestSubArr (2ptr Approach)           | [Here](./3.%20Arrays/3.1.%20Easy/13.%20LongestSubArr.py)            | 25th Dec 2023 |
+| Arrays  | Easy       | LongestSubArr (Hash Approach)           | [Here](./3.%20Arrays/3.1.%20Easy/14.%20LongestSubArrNeg.py)         | 25th Dec 2023 |
+| Arrays  | Medium     | Kadane's Algorithm                      | [Here](./3.%20Arrays/3.2.%20Medium/4.%20Kadane.py)                  | 26th Dec 2023 |
+| Arrays  | Medium     | Next Greater Permutation                | [Here](./3.%20Arrays/3.2.%20Medium/8.%20NextPermutation.py)         | 26th Dec 2023 |
+| Arrays  | Medium     | Longest Consecutive Series              | [Here](./3.%20Arrays/3.2.%20Medium/10.%20LongestConsecutiveLeet.py) | 27th Dec 2023 |
+| Arrays  | Medium     | Zero Matrix Optimal                     | [Here](./3.%20Arrays/3.2.%20Medium/13.%20MatrixSpiralLeet.py)       | 27th Dec 2023 |
+| Arrays  | Medium     | SpiralMatrix Pattern                    | [Here](./3.%20Arrays/3.2.%20Medium/13.%20MatrixSpiralLeet.py)       | 27th Dec 2023 |
+| Arrays  | Hard       | MajorityElement using Moore's           | [Here](./3.%20Arrays/3.3.%20Hard/2.%20MajorityElementLeet.py)       | 28th Dec 2023 |
+| Arrays  | Hard       | 3Sum standard problem                   | [Here](./3.%20Arrays/3.3.%20Hard/3.%203SumLeet.py)                  | 29th Dec 2023 |
+| Arrays  | Hard       | 4Sum standard problem                   | [Here](./3.%20Arrays/3.3.%20Hard/4.%204SumLeet.py)                  | 29th Dec 2023 |
+| Arrays  | Hard       | RepeatingAndMissing using eqns          | [Here](./3.%20Arrays/3.3.%20Hard/10.%20RepeatingAndMissing.py)      | 30th Dec 2023 |
+| Arrays  | Hard       | Count Inversions using Merge            | [Here](./3.%20Arrays/3.3.%20Hard/11.%20CountInversions.py)          | 30th Dec 2023 |
+| Arrays  | Hard       | ReversePairs using Merge                | [Here](./3.%20Arrays/3.3.%20Hard/10.%20RepeatingAndMissing.py)      | 31st Dec 2023 |
+| Arrays  | Hard       | Max Product using Prefix Suffix Product | [Here](./3.%20Arrays/3.3.%20Hard/10.%20RepeatingAndMissing.py)      | 31st Dec 2023 |
 
 ## Course Link
 

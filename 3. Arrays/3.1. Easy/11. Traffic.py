@@ -6,9 +6,6 @@
 """
 
 
-from itertools import count
-
-
 def traffic(n: int, m: int, vehicle: [int]) -> int:
     # Create ans, count and right, and assign with 0.
     ans = 0
