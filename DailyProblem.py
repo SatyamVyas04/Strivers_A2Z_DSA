@@ -1,5 +1,5 @@
 class Solution:
-    def maxLength(self, arr: [str]) -> int:
+    def maxLength(self, arr: list[str]) -> int:
         dp = [set()]
         for word in arr:
             letters = set(word)
