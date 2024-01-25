@@ -1,31 +1,18 @@
-# Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-
-
 class Solution:
-    def pseudoPalindromicPaths(self, root: list[TreeNode]) -> int:
-        paths = []
-        ans = 0
+    def longestCommonSubsequence(self, text1: str, text2: str) -> int:
+        nb, ns = len(text1), len(text2)
+        dp = [[0 for _ in range(nb)] for _ in range(ns)]
+        for row in range(ns):
+            for col in range(nb):
+                if text2[row] == text1[col]:
+                    try:
+                        dp[row][col] = 1 + dp[row-1][col-1]
+                    except:
+                        dp[row][col] = 1
+                else:
+                    dp[row][col] = max(dp[row-1][col], dp[row][col-1])
+        return dp[-1][-1]
 
-        def dfs(node, currpath):
-            if not node:
-                return 0
 
-            if node.val in currpath:
-                currpath.remove(node.val)
-            else:
-                currpath.add(node.val)
-
-            if not node.left and not node.right:
-                return 1 if len(currpath) <= 1 else 0
-
-            left = dfs(node.left, set(currpath))
-            right = dfs(node.right, set(currpath))
-
-            return left + right
-
-        return dfs(root, set())
+sol = Solution()
+print(sol.longestCommonSubsequence("abcde", "ace"))
