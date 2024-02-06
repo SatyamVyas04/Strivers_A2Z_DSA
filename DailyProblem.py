@@ -1,7 +1,12 @@
 class Solution:
-    def firstUniqChar(self, s: str) -> int:
-        c = dict(Counter(s))
-        for i in range(len(s)):
-            if c[s[i]] == 1:
-                return i
-        return -1
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        d = {}
+        for i in strs:
+            key = "".join(sorted(i))
+            if key not in d.keys():
+                d[key] = [i]
+            else:
+                l = d[key]
+                l.append(i)
+                d[key] = l
+        return list(d.values())
