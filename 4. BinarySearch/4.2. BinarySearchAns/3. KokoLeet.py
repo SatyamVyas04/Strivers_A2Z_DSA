@@ -1,5 +1,5 @@
 class Solution:
-    def minEatingSpeed(self, v: [int], h: int) -> int:
+    def minEatingSpeed(self, v: list[int], h: int) -> int:
         from math import ceil
         low = 1
         high = max(v)
@@ -14,6 +14,6 @@ class Solution:
                 high = mid - 1
             else:
                 low = mid + 1
-        return ans
+        return int(ans)
 
 # Link: https://leetcode.com/problems/koko-eating-bananas/

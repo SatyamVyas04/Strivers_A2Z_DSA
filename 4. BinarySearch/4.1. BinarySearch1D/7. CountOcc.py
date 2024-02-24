@@ -1,4 +1,4 @@
-def count(arr: [int], n: int, x: int) -> int:
+def count(arr: list[int], n: int, x: int) -> int:
     # Your code goes here
     ans = firstAndLastPosition(arr, n, x)
     return ans

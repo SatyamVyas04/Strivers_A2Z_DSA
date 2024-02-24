@@ -4,7 +4,7 @@ class Node:
         self.next = next
 
 
-def addTwoNumbers(l1: Node, l2: Node) -> Node:
+def addTwoNumbers(l1: Node | None, l2: Node | None) -> Node | None:
     # Write your code here.
     ans = Node(-1)
     n1 = []
@@ -27,5 +27,5 @@ def addTwoNumbers(l1: Node, l2: Node) -> Node:
         temp = temp.next
 
     return ans.next
-        
+
 # Link: https://www.codingninjas.com/studio/problems/add-two-numbers_1170520

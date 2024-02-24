@@ -1,4 +1,4 @@
-def searchInsert(arr: [int], x: int) -> int:
+def searchInsert(arr: list[int], x: int) -> int:
     # Write your code here.
     low = 0
     high = len(arr) - 1

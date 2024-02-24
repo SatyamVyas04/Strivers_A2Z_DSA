@@ -1,7 +1,7 @@
 from bisect import bisect_right
-def median(matrix: [[int]], m: int, n: int) -> int:
-    maximum = -1e9
-    minimum = 1e9
+def median(matrix: list[list[int]], m: int, n: int) -> int:
+    maximum = int("-inf")
+    minimum = int("inf")
 
     # To find the minimum and maximum in the matrix
     for i in range(m):

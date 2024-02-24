@@ -1,4 +1,4 @@
-def search(nums: [int], target: int):
+def search(nums: list[int], target: int):
     # write your code logic !!
     low = 0
     high = len(nums) - 1

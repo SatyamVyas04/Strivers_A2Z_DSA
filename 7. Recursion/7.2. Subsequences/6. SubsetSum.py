@@ -17,5 +17,5 @@ def isSubsetPresent(n:int, k: int, a: List[int]) -> bool:
         return False
         
     return helper(n, k, a, 0, 0)
-    
+
 # Link: https://www.codingninjas.com/studio/problems/subset-sum_630213

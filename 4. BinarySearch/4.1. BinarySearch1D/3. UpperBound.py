@@ -1,4 +1,4 @@
-def upperBound(arr: [int], x: int, n: int) -> int:
+def upperBound(arr: list[int], x: int, n: int) -> int:
     # Write your code here.
     low = 0
     high = n-1

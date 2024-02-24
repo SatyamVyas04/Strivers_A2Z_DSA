@@ -12,7 +12,8 @@ def pagescheck(arr, pages):
             pagesStudent = arr[i]
     return students
 
-def findPages(arr: [int], n: int, m: int) -> int:
+
+def findPages(arr: list[int], n: int, m: int) -> int:
     # Write your code here
     if m > n:
         return -1

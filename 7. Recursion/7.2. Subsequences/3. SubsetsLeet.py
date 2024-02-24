@@ -1,7 +1,8 @@
 class Solution:
-    def subsets(self, nums: [int]) -> [[int]]:
+    def subsets(self, nums: list[int]) -> list[list[int]]:
         self.ans = []
         self.arr = []
+
         def helper(index, nums, n):
             if index == n:
                 self.ans.append(self.arr[:])

@@ -1,5 +1,5 @@
 class Solution:
-    def search(self, arr: [int], k: int) -> bool:
+    def search(self, arr: list[int], k: int) -> bool:
         if len(arr) == 1:
             return arr[0] == k
         

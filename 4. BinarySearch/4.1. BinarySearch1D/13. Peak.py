@@ -1,4 +1,4 @@
-def findPeakElement(arr: [int]) -> int:
+def findPeakElement(arr: list[int]) -> int:
     n = len(arr)  # Size of the array
 
     # Edge cases:

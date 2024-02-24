@@ -1,4 +1,4 @@
-def rowWithMax1s(matrix: [[int]], n: int, m: int) -> int:
+def rowWithMax1s(matrix: list[list[int]], n: int, m: int) -> int:
     maxCount = 0
     ans = -1
 

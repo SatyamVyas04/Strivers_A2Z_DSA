@@ -1,4 +1,4 @@
-def findKRotation(arr : [int]) -> int:
+def findKRotation(arr : list[int]) -> int:
     # Write your code here.
     n = len(arr)
     if n == 1:

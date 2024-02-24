@@ -1,4 +1,4 @@
-def lowerBound(arr: [int], n: int, x: int) -> int:
+def lowerBound(arr: list[int], n: int, x: int) -> int:
     # Write your code here
     low = 0
     high = n-1

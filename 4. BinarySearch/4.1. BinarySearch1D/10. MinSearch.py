@@ -1,4 +1,4 @@
-def findMin(arr: [int]):
+def findMin(arr: list[int]):
     # Write your code here.
     n = len(arr)
     if n == 1:
