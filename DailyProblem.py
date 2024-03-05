@@ -1,5 +1,12 @@
 class Solution:
-    def maximumOddBinaryNumber(self, s: str) -> str:
-        ones = s.count("1")
-        total_len = len(s)
-        return (ones - 1)*"1" + (total_len - ones)*"0" + "1"
+    def minimumLength(self, s: str) -> int:
+        left, right = 0, len(s) - 1
+
+        while left < right and s[left] == s[right]:
+            char = s[left]
+            while left <= right and s[left] == char:
+                left += 1
+            while right >= left and s[right] == char:
+                right -= 1
+
+        return right - left + 1
