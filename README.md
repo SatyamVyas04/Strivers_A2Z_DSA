@@ -53,6 +53,7 @@ Striver's A2Z DSA Course is a comprehensive program for mastering Data Structure
 | Recursion     | Med        | Making Subsets                          | [Here](./7.%20Recursion/7.2.%20Subsequences/3.%20SubsetsLeet.py)             | 14th Jan 2024 |
 | Recursion     | Hard       | MColoring                               | [Here](./7.%20Recursion/7.3.%20Hard/6.%20MColoring.py)                       | 26th Jan 2024 |
 | Recursion     | Hard       | Sudoko Solver                           | [Here](./7.%20Recursion/7.3.%20Hard/8.%20SudokuLeet.py)                      | 26th Jan 2024 |
+| Bit           | Easy       | Divide without Divide                   | [Here](./8.%20BitManipulation/8.1.%20Basics/8.%20DivideTwoNumbers.py)        | 08th Mar 2024 |
 
 ## Course Link
 
