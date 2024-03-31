@@ -1,26 +1,26 @@
 class Solution:
-    def reorderList(self, head: Optional[ListNode]) -> None:
-        # find middle
-        if not head:
-            return []
-        slow, fast = head, head
-        while fast.next and fast.next.next:
-            slow = slow.next
-            fast = fast.next.next
+    def countSubarrays(self, nums: list[int], minK: int, maxK: int) -> int:
+        max_found = False
+        min_found = False
+        prev_max_index = 0
+        prev_min_index = 0
+        left = 0
+        ans = 0
+        for right, num in enumerate(nums):
+            if not (minK <= num <= maxK):
+                max_found = False
+                min_found = False
+                left = right + 1
+            if num == minK:
+                min_found = True
+                prev_min_index = right
+            if num == maxK:
+                max_found = True
+                prev_max_index = right
+            if max_found and min_found:
+                ans += min(prev_max_index, prev_min_index) - left + 1
+        return ans
 
-        # reverse other second half
-        prev, curr = None, slow.next
-        while curr:
-            nextt = curr.next
-            curr.next = prev
-            prev = curr
-            curr = nextt
-        slow.next = None
 
-        # merging
-        head1, head2 = head, prev
-        while head2:
-            nextt = head1.next
-            head1.next = head2
-            head1 = head2
-            head2 = nextt
+sol = Solution()
+print(sol.countSubarrays([1, 3, 5, 2, 7, 5], 1, 5))
