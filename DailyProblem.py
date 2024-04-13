@@ -1,33 +1,27 @@
 class Solution:
-    def checkValidString(self, s: str) -> bool:
-        stack = []  # (idx, char)
-        stars = []  # storing idx's
-        for idx, ch in enumerate(s):
-            if ch == "*":
-                stars.append(idx)
-            elif not stack:
-                stack.append((idx, ch))
-            elif ch == ")" and stack[-1][-1] == "(":
-                stack.pop()
-            else:
-                stack.append((idx, ch))
-
-        if not stack:
-            return True
-        elif len(stars) < len(stack):
-            return False
-        else:
-            for idx, ch in stack:
-                if ch == "(":
-                    stars_ahead = list(filter(lambda x: x > idx, stars))
-                    if stars_ahead:
-                        stars.remove(stars_ahead[0])
-                    else:
-                        return False
+    def maximalRectangle(self, matrix: list[list[str]]) -> int:
+        ans = 0
+        heights = [0]*len(matrix[0])
+        for row in range(len(matrix)):
+            for col in range(len(matrix[0])):
+                if matrix[row][col] == "1":
+                    heights[col] += int(matrix[row][col])
                 else:
-                    stars_before = list(filter(lambda x: x < idx, stars))
-                    if stars_before:
-                        stars.remove(stars_before[0])
-                    else:
-                        return False
-            return True
+                    heights[col] = 0
+            ans = max(ans, self.findTallestRect(heights))
+        return ans
+
+    def findTallestRect(self, heights: list[int]) -> int:
+        ans = 0
+        stack = []
+        for i in range(len(heights)+1):
+            while stack and ((i == len(heights)) or (heights[stack[-1]] >= heights[i])):
+                height = heights[stack[-1]]
+                stack.pop()
+                if not stack:
+                    width = i
+                else:
+                    width = i - stack[-1]-1
+                ans = max(ans, width*height)
+            stack.append(i)
+        return ans
