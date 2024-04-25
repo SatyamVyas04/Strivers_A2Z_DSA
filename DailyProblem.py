@@ -1,33 +1,47 @@
-from collections import defaultdict
+class Solution:
+    def longestIdealString(self, arr: str, k: int) -> int:
+        ans = 0
+        n = len(arr)
+        memo = {}
+
+        def ideal(s: str) -> bool:
+            for i in range(1, len(s)):
+                if abs(ord(s[i]) - ord(s[i - 1])) > k:
+                    return False
+            return True
+
+        def recur(s: str, ptr: int) -> None:
+            nonlocal ans
+            if s in memo:
+                res = memo[s]
+            else:
+                res = ideal(s)
+                memo[s] = res
+            if res:
+                ans = max(len(s), ans)
+            if ptr < n:
+                recur(s + arr[ptr], ptr + 1)
+                recur(s, ptr + 1)
+
+        recur("", 0)
+        return ans
+
+# Memory Limit Exceeded
+# This is absolute Brute Force
 
 
 class Solution:
-    def findMinHeightTrees(self, n: int, edges: list[list[int]]) -> list[int]:
-        total_node_count = n
-        if total_node_count == 1:
-            # Quick response for one node tree
-            return [0]
+    def longestIdealString(self, s: str, k: int) -> int:
+        dp = [0]*26
+        for c in s:
+            curr = ord(c) - ord('a')
+            longest = 1
+            for prev in range(26):
+                if abs(prev - curr) <= k:
+                    longest = max(longest, 1 + dp[prev])
+            dp[curr] = longest
+        return max(dp)
 
-        # build adjacency matrix
-        adj_matrix = defaultdict(set)
-        for src_node, dst_node in edges:
-            adj_matrix[src_node].add(dst_node)
-            adj_matrix[dst_node].add(src_node)
 
-        # get leaves node whose degree is 1
-        leave_nodes = [node for node in adj_matrix if len(adj_matrix[node]) == 1]
-
-        # keep doing leave nodes removal until total node count is smaller or equal to 2
-        while total_node_count > 2:
-            total_node_count -= len(leave_nodes)
-            leave_nodes_next_round = []
-            # leave nodes removal
-            for leaf in leave_nodes:
-                neighbor = adj_matrix[leaf].pop()
-                adj_matrix[neighbor].remove(leaf)
-                if len(adj_matrix[neighbor]) == 1:
-                    leave_nodes_next_round.append(neighbor)
-            leave_nodes = leave_nodes_next_round
-
-        # final leave nodes are root node of minimum height trees
-        return leave_nodes
+# DP Solution
+# Works now :+1
