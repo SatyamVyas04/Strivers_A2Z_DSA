@@ -1,47 +1,27 @@
+from fractions import Fraction
+
+
 class Solution:
-    def longestIdealString(self, arr: str, k: int) -> int:
-        ans = 0
-        n = len(arr)
-        memo = {}
-
-        def ideal(s: str) -> bool:
-            for i in range(1, len(s)):
-                if abs(ord(s[i]) - ord(s[i - 1])) > k:
-                    return False
-            return True
-
-        def recur(s: str, ptr: int) -> None:
-            nonlocal ans
-            if s in memo:
-                res = memo[s]
+    def searchInsert(self, nums: list[Fraction], target) -> int:
+        l, r = 0, len(nums)-1
+        while l <= r:
+            mid = (l+r)//2
+            if float(nums[mid]) == float(target):
+                return mid
+            if float(nums[mid]) < float(target):
+                l = mid+1
             else:
-                res = ideal(s)
-                memo[s] = res
-            if res:
-                ans = max(len(s), ans)
-            if ptr < n:
-                recur(s + arr[ptr], ptr + 1)
-                recur(s, ptr + 1)
+                r = mid-1
+        return l
 
-        recur("", 0)
-        return ans
-
-# Memory Limit Exceeded
-# This is absolute Brute Force
+    def kthSmallestPrimeFraction(self, arr: list[int], k: int) -> list[int]:
+        ans = [Fraction(0, 1)]
+        for i in range(0, len(arr)):
+            for j in range(i+1, len(arr)):
+                f = Fraction(arr[i], arr[j])
+                idx = self.searchInsert(ans, f)
+                ans.insert(idx, f)
+        return [ans[k].numerator, ans[k].denominator]
 
 
-class Solution:
-    def longestIdealString(self, s: str, k: int) -> int:
-        dp = [0]*26
-        for c in s:
-            curr = ord(c) - ord('a')
-            longest = 1
-            for prev in range(26):
-                if abs(prev - curr) <= k:
-                    longest = max(longest, 1 + dp[prev])
-            dp[curr] = longest
-        return max(dp)
-
-
-# DP Solution
-# Works now :+1
+# Tried
