@@ -1,22 +1,14 @@
-from math import log2
+from collections import defaultdict
 
 
 class Solution:
-    def numSteps(self, s: str) -> int:
+    def countTriplets(self, arr: list[int]) -> int:
         ans = 0
-        num = int(s, 2)
-        while s != 1:
-            curr_power = log2(num)
-            if int(curr_power) == curr_power:
-                ans += int(curr_power)
-                break
-            elif num & 1:
-                num += 1
-            else:
-                num //= 2
-            ans += 1
+        n = len(arr)
+        for i in range(n-1):
+            cur_xor = arr[i]
+            for k in range(i+1, n):
+                cur_xor ^= arr[k]
+                if cur_xor == 0:
+                    ans += k - i
         return ans
-
-
-sol = Solution()
-print(sol.numSteps("1101"))
