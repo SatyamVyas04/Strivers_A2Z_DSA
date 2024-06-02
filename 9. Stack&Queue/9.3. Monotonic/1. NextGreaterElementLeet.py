@@ -12,3 +12,5 @@ class Solution:
                 stack.append(num)
 
         return result
+
+# Link: https://leetcode.com/problems/next-greater-element-i/

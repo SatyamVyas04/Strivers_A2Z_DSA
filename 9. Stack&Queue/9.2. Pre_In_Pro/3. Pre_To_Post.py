@@ -20,3 +20,5 @@ class Solution:
 
         # The final postfix expression is the only element left in the stack
         return stack[-1]
+
+# Link: https://www.geeksforgeeks.org/problems/prefix-to-postfix-conversion/1

@@ -24,3 +24,5 @@ class Solution:
             ans += opstack.pop()
 
         return ans[::-1]
+
+# Link: https://www.geeksforgeeks.org/problems/infix-to-postfix-1587115620/1

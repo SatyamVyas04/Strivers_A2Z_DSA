@@ -18,3 +18,5 @@ class Solution:
 
         # The final prefix expression is the only element left in the stack
         return stack[-1]
+
+# Link: https://www.geeksforgeeks.org/problems/postfix-to-prefix-conversion/1

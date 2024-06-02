@@ -38,3 +38,5 @@ class minStack:
         if self.Stack:
             return self.Min[-1]
         return -1
+
+# Link: https://leetcode.com/problems/min-stack/

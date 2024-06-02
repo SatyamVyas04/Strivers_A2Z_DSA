@@ -15,9 +15,11 @@ class MinStack:
     def top(self) -> int:
         return self.arr[-1][0]
 
-    def getMin(self) -> int:
+    def getMin(self):
         if self.arr:
             return self.arr[-1][1]
         else:
             # Relaxed type since there's no better way to represent inf in int
             return float("inf")
+
+# Link: https://leetcode.com/problems/min-stack/
