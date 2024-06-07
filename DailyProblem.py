@@ -1,17 +1,19 @@
-from functools import reduce
-from operator import xor
-
-
 class Solution:
-    def singleNumber(self, nums):
-        s = reduce(xor, nums)
+    def replaceWords(self, dictionary: list[str], sentence: str) -> str:
+        root_set = set(dictionary)
+        words = sentence.split()
 
-        nz = s & (s-1) ^ s
+        def replace(word):
+            for i in range(1, len(word) + 1):
+                if word[:i] in root_set:
+                    return word[:i]
+            return word
 
-        num1 = reduce(xor, filter(lambda n: n & nz, nums))
-
-        return (num1, s ^ num1)
+        return " ".join(replace(word) for word in words)
 
 
 sol = Solution()
-print(sol.singleNumber([1, 1, 2, 2, 3, 5]))
+print(sol.replaceWords(
+    dictionary=["cat", "bat", "rat"],
+    sentence="the cattle was rattled by the battery"
+))
