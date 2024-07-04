@@ -1,29 +1,30 @@
-# Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
+# Definition for singly-linked list.
+from typing import Optional
+
+
+class ListNode:
+    def __init__(self, val=0, next=None):
         self.val = val
-        self.left = left
-        self.right = right
+        self.next = next
 
 
 class Solution:
-    def bstToGst(self, root: TreeNode) -> TreeNode:
-        nodes = []
-        dummy = TreeNode(-1)
+    def mergeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if not head:
+            return None
+
+        dummy = ListNode(-1)
         temp = dummy
+        curr = head
+        currsum = 0
 
-        def dfs(root, temp):
-            if root:
-                if root.right:
-                    temp.right = TreeNode()
-                    dfs(root.right, temp.right)
-                nodes.append(root.val)
-                temp.val = sum(nodes)
-                if root.left:
-                    temp.left = TreeNode()
-                    dfs(root.left, temp.left)
+        while curr:
+            if curr.val == 0:
+                temp.next = ListNode(currsum)
+                temp = temp.next
+                currsum = 0
+            else:
+                currsum += curr.val
+            curr = curr.next
 
-        dfs(root, temp)
-        return dummy
-
-# Link: https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/
+        return dummy.next
