@@ -14,4 +14,6 @@ class Solution:
             stack.append(i)
         return ans
 
+# Better Approach: Area = Curr_Height * (NextSmallerIndex - PrevSmallerIndex - 1)
+
 # Link: https://leetcode.com/problems/largest-rectangle-in-histogram/
