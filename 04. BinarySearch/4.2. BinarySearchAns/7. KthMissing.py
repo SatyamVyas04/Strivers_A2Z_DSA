@@ -1,8 +1,7 @@
-from typing import *
+from typing import List
 
 def missingK(vec: List[int], n: int, k: int) -> int:
     # Write your code here.
-    n = len(vec)
     low = 0
     high = n-1        
     missing = 0

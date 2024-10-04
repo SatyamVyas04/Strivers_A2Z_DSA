@@ -1,9 +1,8 @@
 from typing import List
 
-def commonPrefix(inp: List[str], n: int) -> str:
+def commonPrefix(inp: List[str], n: int) -> str | int:
     # Write your code here
     ans = ""
-    n = len(inp)
     mini = len(min(inp, key=len))
     for i in range(mini):
         mainchar = inp[0][i]

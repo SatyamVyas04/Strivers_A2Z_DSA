@@ -1,12 +1,12 @@
-def read(n: int, book: [int], target: int) -> str:
+def read(n: int, book: list[int], target: int) -> str:
     # Write your code here.
     d = {}
-    for i, n in enumerate(book):
-        rem = target - n
+    for i, num in enumerate(book):
+        rem = target - num
         if rem in d.keys():
             return "YES"
         else:
-            d[n] = i
+            d[num] = i
     return "NO"
 
 # Link: https://www.codingninjas.com/studio/problems/reading_6845742

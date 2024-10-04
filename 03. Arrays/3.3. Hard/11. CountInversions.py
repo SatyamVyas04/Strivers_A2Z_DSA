@@ -46,9 +46,6 @@ def mergeSort(arr : List[int], low : int, high : int) -> int:
     return cnt
 
 def numberOfInversions(a : List[int], n : int) -> int:
-    # Count the number of pairs:
-    n = len(a)
-    # Count the number of pairs:
     return mergeSort(a, 0, n - 1)
 
 if __name__ == "__main__":
