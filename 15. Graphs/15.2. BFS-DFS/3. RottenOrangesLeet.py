@@ -8,10 +8,10 @@ class Solution:
             for j in range(len(grid[0])):
                 if grid[i][j] == 2:
                     rotten_positions.append((i, j))
-                    
+
         directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]
         minutes = 0
-        
+
         while rotten_positions:
             new_rotten_positions = []
             for i, j in rotten_positions:
@@ -25,3 +25,5 @@ class Solution:
             if rotten_positions:
                 minutes += 1
         return -1 if any(1 in row for row in grid) else minutes
+
+# Link: https://leetcode.com/problems/rotting-oranges/
