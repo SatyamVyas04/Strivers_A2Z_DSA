@@ -4,11 +4,11 @@ This repository contains solutions to the Data Structures and Algorithms (DSA) p
 
 ## Table of Contents
 
--   [About the Project](#about-the-project)
--   [Important Topics](#important-topics)
--   [Course Link](#course-link)
--   [Contributing](#contributing)
--   [License](#license)
+- [About the Project](#about-the-project)
+- [Important Topics](#important-topics)
+- [Course Link](#course-link)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## About the Project
 
