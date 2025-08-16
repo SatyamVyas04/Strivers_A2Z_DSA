@@ -30,5 +30,5 @@ class Solution:
 
         # Dummy return statement
         return -1
-    
+
 # Link: https://leetcode.com/problems/find-peak-element/

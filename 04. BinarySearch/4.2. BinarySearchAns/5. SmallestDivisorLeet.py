@@ -1,4 +1,6 @@
 from math import ceil
+
+
 class Solution:
     def smallestDivisor(self, nums: [int], threshold: int) -> int:
         low = 1
@@ -14,5 +16,5 @@ class Solution:
             else:
                 low = mid + 1
         return low
-    
+
 # Link: https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/

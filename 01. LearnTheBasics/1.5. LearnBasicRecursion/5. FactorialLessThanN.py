@@ -1,9 +1,11 @@
 from typing import *
 
+
 def factorialNumbers(n: int) -> List[int]:
     l = []
+
     def recur(num, i, n):
-        if num>n:
+        if num > n:
             return
         l.append(num)
         recur(num*(i+1), i+1, n)

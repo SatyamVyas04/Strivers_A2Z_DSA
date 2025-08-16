@@ -17,5 +17,5 @@ class Solution:
             else:
                 currval += d[s[i]]
         return currval
-    
+
 # Link: https://leetcode.com/problems/roman-to-integer/

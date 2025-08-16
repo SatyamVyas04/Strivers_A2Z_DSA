@@ -18,5 +18,5 @@ class Solution:
             if q and q[0][1] == time:
                 heapq.heappush(maxheap, q.pop(0)[0])
         return time
-    
+
 # Link: https://leetcode.com/problems/task-scheduler/

@@ -13,7 +13,7 @@ class Solution:
         while temp:
             cnt += 1
             temp = temp.next
-        
+
         k = k % cnt
         if not k:
             return head
@@ -27,5 +27,5 @@ class Solution:
             last.next = head
             head = last
         return head
-    
+
 # Link: https://leetcode.com/problems/rotate-list/

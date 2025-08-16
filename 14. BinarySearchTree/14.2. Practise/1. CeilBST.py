@@ -11,5 +11,5 @@ class Solution:
                 ceil = root.key
                 root = root.left
         return ceil
-    
+
 # Link: https://www.geeksforgeeks.org/problems/implementing-ceil-in-bst/1

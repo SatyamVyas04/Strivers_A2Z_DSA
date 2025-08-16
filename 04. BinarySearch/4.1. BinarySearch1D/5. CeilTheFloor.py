@@ -3,6 +3,7 @@ from sys import *
 from collections import *
 from math import *
 
+
 def getFloorAndCeil(arr, n, x):
     # Write your code here.
     low = 0

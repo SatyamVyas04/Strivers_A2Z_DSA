@@ -9,7 +9,6 @@ class Solution:
         suffix = reversed_string[: len(s) - palindrome_length]
         return suffix + s
 
-
     def _build_prefix_table(self, s: str) -> list:
         prefix_table = [0] * len(s)
         length = 0
@@ -21,5 +20,5 @@ class Solution:
                 length += 1
             prefix_table[i] = length
         return prefix_table
-    
+
 # Link: https://leetcode.com/problems/shortest-palindrome/

@@ -15,7 +15,7 @@ def sumOfAllDivisors(n: int) -> int:
         # 'r' = maximum value of 'i' such that 'n/i' is val.
         r = n // val
         ans += ((r * (r + 1)) // 2 - (l * (l - 1)) // 2) * val
-        
+
         # moving on to next range.
         l = r + 1
 

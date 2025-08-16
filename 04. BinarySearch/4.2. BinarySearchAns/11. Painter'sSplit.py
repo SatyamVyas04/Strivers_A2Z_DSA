@@ -9,7 +9,8 @@ def checkfn(arr, cap):
             c += 1
     return c
 
-def findLargestMinDistance(boards:list, k:int):
+
+def findLargestMinDistance(boards: list, k: int):
     # Write your code here
     # Return an integer
     if k > len(boards):

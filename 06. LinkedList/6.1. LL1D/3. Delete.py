@@ -3,10 +3,11 @@ class Node:
         self.val = val
         self.next = next
 
+
 def deleteLast(head: Node) -> Node:
     # Write your code here
     temp = head
-    while temp.next.next!=None:
+    while temp.next.next != None:
         temp = temp.next
     temp.next = None
     return head

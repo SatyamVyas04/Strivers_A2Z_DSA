@@ -16,7 +16,7 @@ def flattenLinkedList(head: Node) -> Node:
             temp = temp.child
         arr.append(temp.data)
         temp = nex
-    
+
     arr.sort()
     dummy = Node(-1)
     t = dummy
@@ -24,5 +24,5 @@ def flattenLinkedList(head: Node) -> Node:
         t.child = Node(i)
         t = t.child
     return dummy.child
-    
+
 # Link: https://www.codingninjas.com/studio/problems/flatten-a-linked-list_1112655

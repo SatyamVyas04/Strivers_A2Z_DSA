@@ -4,6 +4,7 @@ class Solution:
         for i in s:
             if i.isalnum():
                 a += i.lower()
-        if a==a[::-1]: return True
-                
+        if a == a[::-1]:
+            return True
+
 # Link: https://leetcode.com/problems/valid-palindrome/

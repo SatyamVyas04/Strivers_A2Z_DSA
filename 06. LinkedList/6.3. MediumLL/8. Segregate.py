@@ -8,12 +8,13 @@ class Node:
 
 '''
 
+
 def segregateEvenOdd(head):
     # Write your code here
     temp = head
     a, b = [], []
     while temp:
-        if temp.data%2:
+        if temp.data % 2:
             a.append(temp.data)
         else:
             b.append(temp.data)

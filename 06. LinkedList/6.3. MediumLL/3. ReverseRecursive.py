@@ -8,5 +8,5 @@ class Solution:
         n = node.next
         node.next = prev
         return self._reverse(n, node)
-    
+
 # Link: https://leetcode.com/problems/reverse-linked-list/

@@ -1,6 +1,7 @@
 from typing import *
 from collections import defaultdict
 
+
 def at_most(s, k):
     if not s:
         return 0
@@ -17,6 +18,7 @@ def at_most(s, k):
             left += 1
         num += i - left + 1
     return num
+
 
 def countSubStrings(s: str, k: int) -> int:
     # Write your code here

@@ -1,5 +1,5 @@
 def findPeakGrid(arr: [[int]]) -> [int]:
-    # Write your code here.    
+    # Write your code here.
     n = len(arr)  # Size of the array
     m = len(arr[0])
 
@@ -15,8 +15,8 @@ def findPeakGrid(arr: [[int]]) -> [int]:
                 maxval = arr[i][mid]
                 index = i
 
-        l = arr[index][mid - 1] if mid-1>=0 else -1
-        r = arr[index][mid + 1] if mid+1<m else -1
+        l = arr[index][mid - 1] if mid-1 >= 0 else -1
+        r = arr[index][mid + 1] if mid+1 < m else -1
 
         if arr[index][mid] > l and arr[index][mid] > r:
             return [index, mid]
@@ -24,7 +24,7 @@ def findPeakGrid(arr: [[int]]) -> [int]:
             high = mid - 1
         else:
             low = mid + 1
-            
+
     return [-1, -1]
 
 # Link: https://www.codingninjas.com/studio/problems/find-peak-element_7449073

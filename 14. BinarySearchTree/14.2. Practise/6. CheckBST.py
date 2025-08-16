@@ -6,5 +6,5 @@ class Solution(object):
             return False
         return self.isValidBST(root.left, min(lessThan, root.val), largerThan) and \
             self.isValidBST(root.right, lessThan, max(root.val, largerThan))
-            
+
 # Link: https://leetcode.com/problems/validate-binary-search-tree/description/

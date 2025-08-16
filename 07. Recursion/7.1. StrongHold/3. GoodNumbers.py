@@ -1,6 +1,7 @@
 from typing import List
 
-def goodNumbers(a: int, b:int, digit:int) -> List[int]:
+
+def goodNumbers(a: int, b: int, digit: int) -> List[int]:
     arr = []
     for i in range(a, b+1):
         if str(digit) in str(i):
@@ -14,6 +15,6 @@ def goodNumbers(a: int, b:int, digit:int) -> List[int]:
             index = index-1
         if flag:
             arr.append(int(i))
-    return arr 
+    return arr
 
 # Link: https://www.codingninjas.com/studio/problems/good-numbers_625508

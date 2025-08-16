@@ -30,6 +30,7 @@ class Trie:
                 node = node.links[bit]
         return max_num
 
+
 class Solution:
     def maximizeXor(self, nums: List[int], queries: List[List[int]]) -> List[int]:
         trie = Trie()
@@ -53,5 +54,5 @@ class Solution:
             else:
                 ans[queryIndex] = -1
         return ans
-    
+
 # Link: https://leetcode.com/problems/maximum-xor-with-an-element-from-array/

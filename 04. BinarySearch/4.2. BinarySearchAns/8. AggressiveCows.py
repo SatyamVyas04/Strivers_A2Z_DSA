@@ -10,6 +10,7 @@ def cowscheck(stalls, dist, cows):
             return True
     return False
 
+
 def aggressiveCows(stalls, k):
     # Write your code here.
     stalls.sort()

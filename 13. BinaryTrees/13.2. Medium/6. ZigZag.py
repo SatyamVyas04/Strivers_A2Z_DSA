@@ -9,10 +9,11 @@ from typing import Optional
 
 
 class Solution:
-    def zigzagLevelOrder(self, root: Optional[TreeNode]) -> List[List[int]]: # type: ignore
+    # type: ignore
+    def zigzagLevelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
         if not root:
             return []
-        
+
         q = deque([(root, 0)])
         curr_arr = []
         finalarr = []
@@ -34,17 +35,17 @@ class Solution:
 
             curr_arr.append(curr.val)
             if curr.left:
-                q.append((curr.left, l + 1)) # type: ignore
+                q.append((curr.left, l + 1))  # type: ignore
             if curr.right:
-                q.append((curr.right, l + 1)) # type: ignore
-        
+                q.append((curr.right, l + 1))  # type: ignore
+
         if curr_arr and booleanFlag:
             finalarr.append(curr_arr)
             booleanFlag = False
         elif curr_arr and not booleanFlag:
             finalarr.append(curr_arr[::-1])
             booleanFlag = True
-        
+
         return finalarr
 
 # Link: https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/

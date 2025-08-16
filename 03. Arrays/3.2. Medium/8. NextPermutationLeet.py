@@ -13,12 +13,12 @@ class Solution:
         if flag == 0 and ptr == -1:
             arr[:] = arr[::-1]
 
-        if flag:  
+        if flag:
             for j in range(n-1, ptr, -1):
                 if arr[j] > arr[ptr]:
                     arr[j], arr[ptr] = arr[ptr], arr[j]
                     break
-            
+
             arr[:] = arr[:ptr+1] + arr[ptr+1:][::-1]
 
 # Link: https://leetcode.com/problems/next-permutation/

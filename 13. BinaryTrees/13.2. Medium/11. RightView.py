@@ -2,7 +2,8 @@ from collections import deque
 
 
 class Solution:
-    def rightSideView(self, root: Optional[TreeNode]) -> List[int]: # type: ignore
+    # type: ignore
+    def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
         if not root:
             return []
 

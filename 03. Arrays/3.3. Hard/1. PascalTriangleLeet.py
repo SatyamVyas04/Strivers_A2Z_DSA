@@ -4,7 +4,7 @@ class Solution:
         for i in range(1, numRows+1):
             soln.append(self.generaterow(i))
         return soln
-    
+
     def generaterow(self, n):
         ans = [1]
         term = 1

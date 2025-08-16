@@ -5,7 +5,7 @@ class Solution:
         high = sum(weights)
         ans = sum(weights)
 
-        while low<=high:
+        while low <= high:
             mid = (low + high) // 2
 
             total = 0
@@ -19,8 +19,8 @@ class Solution:
             if daystaken <= days:
                 high = mid - 1
             else:
-                low = mid + 1 
-                
+                low = mid + 1
+
         return low
 
 # Link: https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/

@@ -1,6 +1,6 @@
-def calcGCD(n:int, m: int) -> int:
-    while m%n!=0:
-        remainder = m%n
+def calcGCD(n: int, m: int) -> int:
+    while m % n != 0:
+        remainder = m % n
         m = n
         n = remainder
     return n

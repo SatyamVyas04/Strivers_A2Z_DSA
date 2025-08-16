@@ -11,5 +11,5 @@ class Solution:
             slow = slow.next
             fast = fast.next.next
         return slow
-    
+
 # Link: https://leetcode.com/problems/middle-of-the-linked-list/

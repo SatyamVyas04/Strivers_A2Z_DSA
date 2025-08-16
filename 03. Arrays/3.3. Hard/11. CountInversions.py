@@ -2,10 +2,11 @@
 from typing import List
 import math
 
-def merge(arr : List[int], low : int, mid : int, high : int) -> int:
+
+def merge(arr: List[int], low: int, mid: int, high: int) -> int:
     temp = []   # temporary array
     left = low  # starting index of left half of arr
-    right = mid + 1 # starting index of right half of arr
+    right = mid + 1  # starting index of right half of arr
 
     cnt = 0     # Modification 1: cnt variable to count the pairs
 
@@ -35,7 +36,8 @@ def merge(arr : List[int], low : int, mid : int, high : int) -> int:
 
     return cnt   # Modification 3
 
-def mergeSort(arr : List[int], low : int, high : int) -> int:
+
+def mergeSort(arr: List[int], low: int, high: int) -> int:
     cnt = 0
     if low >= high:
         return cnt
@@ -45,8 +47,10 @@ def mergeSort(arr : List[int], low : int, high : int) -> int:
     cnt += merge(arr, low, mid, high)  # merging sorted halves
     return cnt
 
-def numberOfInversions(a : List[int], n : int) -> int:
+
+def numberOfInversions(a: List[int], n: int) -> int:
     return mergeSort(a, 0, n - 1)
+
 
 if __name__ == "__main__":
     a = [5, 4, 3, 2, 1]

@@ -1,6 +1,7 @@
 from typing import *
 from collections import Counter
 
+
 def countFrequency(n: int, m: int, edges: List[List[int]]):
     ans = [0]*n
     c = dict(Counter(edges))

@@ -10,5 +10,5 @@ class Solution:
             else:
                 l = i + 1
         return -1
-    
+
 # Link: https://leetcode.com/problems/binary-search/

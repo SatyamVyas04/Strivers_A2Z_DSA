@@ -3,6 +3,7 @@ from sys import *
 from collections import *
 from math import *
 
+
 def firstAndLastPosition(arr, n, k):
     low = 0
     high = n-1
@@ -14,17 +15,17 @@ def firstAndLastPosition(arr, n, k):
             high = mid - 1
         else:
             low = mid + 1
-    
+
     low = 0
     high = n-1
-    while low <= high: 
+    while low <= high:
         mid = (low + high)//2
         if arr[mid] > k:
             b = mid
             high = mid - 1
         else:
             low = mid + 1
-    
+
     if arr[a] != k:
         return (-1, -1)
     return (a, b-1)

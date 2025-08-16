@@ -11,5 +11,5 @@ class Solution:
                 else:
                     adds += 1
         return adds + ops
-    
+
 # Link: https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/

@@ -1,5 +1,6 @@
 from typing import List
 
+
 def commonPrefix(inp: List[str], n: int) -> str | int:
     # Write your code here
     ans = ""

@@ -6,6 +6,6 @@ class Solution:
             if m in d:
                 return [d[m], i]
             else:
-                d[n] = i  
-                
+                d[n] = i
+
 # Link: https://leetcode.com/problems/two-sum/

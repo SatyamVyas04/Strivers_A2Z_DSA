@@ -2,7 +2,8 @@ class Solution:
     def reversePairs(self, nums: [int]) -> int:
 
         def ms(l, r):
-            if l >= r: return 0
+            if l >= r:
+                return 0
             mid = (l + r) // 2
             count = ms(l, mid) + ms(mid + 1, r)
 
@@ -16,5 +17,5 @@ class Solution:
             return count
 
         return ms(0, len(nums) - 1)
-    
+
 # Link: https://leetcode.com/problems/reverse-pairs/

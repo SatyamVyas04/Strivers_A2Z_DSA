@@ -12,6 +12,7 @@ from os import *
 
 '''
 
+
 def findMiddle(head):
     # Write your code here
     # head denoted head of linked list

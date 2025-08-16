@@ -6,5 +6,5 @@ class Solution:
                 return False
             mini = num
         return True
-    
+
 # Link: https://www.geeksforgeeks.org/problems/binary-search-trees/1

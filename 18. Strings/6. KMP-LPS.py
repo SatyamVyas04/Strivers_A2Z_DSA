@@ -28,12 +28,13 @@ def kmp(pattern, text, lps):
             return l - len(pattern)
     return -1
 
+
 class Solution:
     def strStr(self, haystack, needle):
         if needle == "":
             return 0
-        
+
         lps = lps_maker(needle)
         return kmp(needle, haystack, lps)
-    
+
 # Link: https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/

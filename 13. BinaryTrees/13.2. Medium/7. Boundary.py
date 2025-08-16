@@ -41,13 +41,13 @@ def traverseBoundary(root):
             return res
         if not isLeaf(root):
             res.append(root.data)
-        
+
         addLeftBoundary(root, res)
         addLeaves(root, res)
         addRightBoundary(root, res)
-        
+
         return res
-    
+
     return printBoundary(root)
 
 # Link: https://www.naukri.com/code360/problems/boundary-traversal_790725?leftPanelTabValue=PROBLEM

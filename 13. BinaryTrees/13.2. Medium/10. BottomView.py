@@ -18,7 +18,7 @@ class Solution:
         ans = []
         for col in sorted(hashmap.keys()):
             col_nodes = sorted(hashmap[col], key=lambda x: (
-                x[0], x[1]), reverse=True) # JUST CHANGED HERE
+                x[0], x[1]), reverse=True)  # JUST CHANGED HERE
             ans.append(col_nodes[0][2])
         return ans
 

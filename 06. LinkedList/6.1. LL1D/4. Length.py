@@ -8,7 +8,8 @@ class Node:
         
 '''
 
-def length(head) :
+
+def length(head):
     cnt = 0
     temp = head
     while temp:

@@ -1,6 +1,7 @@
 
 from typing import List
 
+
 def merge(arr, low, mid, high):
     temp = []  # temporary array
     left = low  # starting index of left half of arr
@@ -29,6 +30,7 @@ def merge(arr, low, mid, high):
     for i in range(low, high + 1):
         arr[i] = temp[i - low]
 
+
 def countPairs(arr, low, mid, high):
     right = mid + 1
     cnt = 0
@@ -37,6 +39,7 @@ def countPairs(arr, low, mid, high):
             right += 1
         cnt += (right - (mid + 1))
     return cnt
+
 
 def mergeSort(arr, low, high):
     cnt = 0
@@ -48,6 +51,7 @@ def mergeSort(arr, low, high):
     cnt += countPairs(arr, low, mid, high)  # Modification
     merge(arr, low, mid, high)  # merging sorted halves
     return cnt
+
 
 def team(skill: [int], n: int) -> int:
     return mergeSort(skill, 0, n - 1)

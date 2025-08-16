@@ -14,5 +14,5 @@ class Solution:
             else:
                 high = mid - 1
         return False
-    
+
 # Link: https://leetcode.com/problems/search-a-2d-matrix/

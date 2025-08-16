@@ -10,8 +10,7 @@ class Solution(object):
         slow.next = None
         l, r = self.sortList(head), self.sortList(start)
         return self.merge(l, r)
-        
-        
+
     def merge(self, l, r):
         if not l or not r:
             return l or r
@@ -26,5 +25,5 @@ class Solution(object):
             p = p.next
         p.next = l or r
         return dummy.next
-    
+
 # Link: https://leetcode.com/problems/sort-list/

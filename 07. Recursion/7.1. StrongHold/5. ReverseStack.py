@@ -7,6 +7,7 @@
 
 from typing import List
 
+
 def insertAtBottom(stack: List[int], ele: int) -> None:
     """
     Recursive function to insert an element at the bottom of the stack.
@@ -24,6 +25,7 @@ def insertAtBottom(stack: List[int], ele: int) -> None:
 
     # Push the removed top element back onto the stack.
     stack.append(top)
+
 
 def reverseStack(stack: List[int]) -> None:
     """

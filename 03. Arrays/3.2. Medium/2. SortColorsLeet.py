@@ -15,5 +15,5 @@ class Solution:
             else:
                 nums[two], nums[one] = nums[one], nums[two]
                 two -= 1
-                
+
 # Link: https://leetcode.com/problems/sort-colors/

@@ -8,12 +8,12 @@ class Solution:
             remove = pre - k
             if remove in hashmap.keys():
                 count += hashmap[remove]
-                
+
             if pre in hashmap:
                 hashmap[pre] += 1
             else:
                 hashmap[pre] = 1
-        
-        return count 
-    
+
+        return count
+
 # Link: https://leetcode.com/problems/subarray-sum-equals-k/

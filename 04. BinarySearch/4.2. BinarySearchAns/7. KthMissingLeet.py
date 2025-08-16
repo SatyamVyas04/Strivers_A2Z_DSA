@@ -10,6 +10,6 @@ class Solution:
                 low = mid + 1
             else:
                 high = mid - 1
-        return low + k 
-    
+        return low + k
+
 # Link: https://leetcode.com/problems/kth-missing-positive-number/

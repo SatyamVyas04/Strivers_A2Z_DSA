@@ -5,7 +5,8 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]: # type: ignore
+    # type: ignore
+    def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         ret = []
         stack = [root]
         while stack:

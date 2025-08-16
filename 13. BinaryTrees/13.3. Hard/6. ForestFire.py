@@ -1,7 +1,7 @@
 class Solution:
     def minTime(self, root, target):
         return self.distanceK(root, target)
-        
+
     def distanceK(self, root, target):
         if not root:
             return []

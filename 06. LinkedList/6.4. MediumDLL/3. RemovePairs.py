@@ -8,7 +8,7 @@ class Node:
 def removeDuplicates(head: Node) -> Node:
     # Write your code here
     curr = head
-    while curr!=None and curr.next !=None:
+    while curr != None and curr.next != None:
         if curr.next.data == curr.data:
             curr.next = curr.next.next
         else:

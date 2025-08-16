@@ -24,5 +24,5 @@ class Solution:
             else:
                 return ans
         return ans
-    
+
 # Link: https://leetcode.com/problems/longest-common-prefix/

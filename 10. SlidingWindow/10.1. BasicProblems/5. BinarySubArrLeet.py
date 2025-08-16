@@ -8,7 +8,7 @@
 #             removal = presum - goal
 #             count += hashmap[removal]
 #             hashmap[presum] += 1
-#         return count           
+#         return count
 
 class Solution:
     def numSubarraysWithSum(self, nums: list[int], goal: int) -> int:
@@ -29,5 +29,5 @@ class Solution:
             r += 1
             ans += temp
         return ans
-    
+
 # Link: https://leetcode.com/problems/binary-subarrays-with-sum/

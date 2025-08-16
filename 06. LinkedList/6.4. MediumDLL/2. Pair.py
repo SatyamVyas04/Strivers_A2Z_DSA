@@ -18,5 +18,5 @@ def findPairs(head: Node, k: int) -> [[int]]:
             prev.add(temp.data)
         temp = temp.next
     return ans
-    
+
 # Link: https://www.codingninjas.com/studio/problems/find-pairs-with-given-sum-in-doubly-linked-list_1164172

@@ -19,7 +19,7 @@ class Solution:
         if n2 > n1:
             n1, n2 = n2, n1
             l1, l2 = l2, l1
-        
+
         a = l1
         b = l2
         prev = None
@@ -36,7 +36,7 @@ class Solution:
                 carry, digit = divmod(a.val + carry, 10)
                 a.val = digit
                 a = a.next
-        
+
         if carry == 1:
             prev.next = ListNode(1)
             return l1

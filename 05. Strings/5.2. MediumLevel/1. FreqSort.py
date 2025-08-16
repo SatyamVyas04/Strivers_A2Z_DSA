@@ -1,5 +1,6 @@
 from collections import Counter
 
+
 def sortByFrequency(n: int, s: str) -> str:
     # Write your code here
     c = dict(Counter(s))

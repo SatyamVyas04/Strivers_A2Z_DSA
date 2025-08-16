@@ -2,7 +2,8 @@ from collections import defaultdict
 
 
 class Solution:
-    def verticalTraversal(self, root: Optional[TreeNode]) -> List[List[int]]: # type: ignore
+    # type: ignore
+    def verticalTraversal(self, root: Optional[TreeNode]) -> List[List[int]]:
         hashmap = defaultdict(list)
 
         def dfs(node, col, row):

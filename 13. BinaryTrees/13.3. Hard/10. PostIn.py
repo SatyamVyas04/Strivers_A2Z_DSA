@@ -1,5 +1,6 @@
 class Solution:
-    def buildTree(self, inorder: List[int], postorder: List[int]) -> Optional[TreeNode]: # type: ignore
+    # type: ignore
+    def buildTree(self, inorder: List[int], postorder: List[int]) -> Optional[TreeNode]:
         if not postorder or not inorder:
             return None
         root = TreeNode(postorder[-1])  # type: ignore

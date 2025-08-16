@@ -12,7 +12,7 @@ class Solution:
             for i in range(top, bottom+1):
                 ans.append(matrix[i][right])
             right -= 1
-            if top <= bottom: 
+            if top <= bottom:
                 for i in range(right, left-1, -1):
                     ans.append(matrix[bottom][i])
                 bottom -= 1
@@ -21,5 +21,5 @@ class Solution:
                     ans.append(matrix[i][left])
                 left += 1
         return ans
-    
+
 # Link: https://leetcode.com/problems/spiral-matrix/

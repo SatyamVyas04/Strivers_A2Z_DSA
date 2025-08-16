@@ -3,6 +3,7 @@ class Node:
         self.data = data
         self.next = next
 
+
 def insertAtFirst(l: Node, newValue: int) -> Node:
     # Write your code here
     new = Node(newValue, l)

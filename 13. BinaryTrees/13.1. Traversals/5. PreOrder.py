@@ -5,8 +5,10 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]: #type: ignore
+    # type: ignore
+    def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         self.ans = []
+
         def dfs(root):
             if not root:
                 return
@@ -15,5 +17,5 @@ class Solution:
             dfs(root.right)
         dfs(root)
         return self.ans
-    
+
 # Link: https://leetcode.com/problems/binary-tree-preorder-traversal/

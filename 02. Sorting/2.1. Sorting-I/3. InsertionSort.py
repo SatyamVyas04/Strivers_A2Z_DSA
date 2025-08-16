@@ -2,25 +2,29 @@
 import os
 import sys
 from copy import deepcopy
-input = lambda: sys.stdin.readline().rstrip("\r\n")
+def input(): return sys.stdin.readline().rstrip("\r\n")
+
+
 sys.setrecursionlimit(10 ** 7)
+
+
 def insertionSort(arr):
     # write your code here !!!
     for i in range(1, len(arr)):
         j = i
-        while j>0 and arr[j-1] > arr[j]:
+        while j > 0 and arr[j-1] > arr[j]:
             arr[j], arr[j-1] = arr[j-1], arr[j]
-            j-=1
+            j -= 1
 
-        
+
 class Runner:
     def __init__(self):
         self.n = 0
-        self.arr =[]
+        self.arr = []
 
     def takeInput(self):
         self.n = int(input())
-        self.arr= list(map(int, input().split()))
+        self.arr = list(map(int, input().split()))
 
     def execute(self):
 
@@ -29,6 +33,7 @@ class Runner:
     def executeAndPrintOutput(self):
         ans = insertionSort(self.arr)
         print(*self.arr)
+
 
 runner = Runner()
 runner.takeInput()

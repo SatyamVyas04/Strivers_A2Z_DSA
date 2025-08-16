@@ -5,6 +5,7 @@ def mergeSort(arr: [int], l: int, r: int):
         mergeSort(arr, mid + 1, r)
         merge(arr, l, mid, r)
 
+
 def merge(arr, l, mid, r):
     len1 = mid - l + 1
     len2 = r - mid

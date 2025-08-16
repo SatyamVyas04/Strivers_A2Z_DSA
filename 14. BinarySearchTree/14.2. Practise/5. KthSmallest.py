@@ -5,7 +5,8 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def kthSmallest(self, root: Optional[TreeNode], k: int) -> int: # type: ignore
+    # type: ignore
+    def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
         arr = []
         while root:
             arr.append(root)

@@ -4,6 +4,8 @@
 
     where N is the size of array 'A'
 """
+
+
 def subarraysWithSumK(a: [int], b: int) -> int:
     count = 0
     # number of subarrays

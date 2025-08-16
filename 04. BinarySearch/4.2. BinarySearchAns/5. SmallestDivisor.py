@@ -3,12 +3,13 @@ from sys import *
 from collections import *
 from math import *
 
+
 def smallestDivisor(arr: [int], limit: int) -> int:
     # Write your code here.
     low = 1
     high = max(arr)
     ans = float("inf")
-    while low<=high:
+    while low <= high:
         mid = (low + high) // 2
         currsum = 0
         for i in arr:

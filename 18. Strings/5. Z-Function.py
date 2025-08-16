@@ -21,6 +21,7 @@ def calculate_z(s):
                 r -= 1
     return z
 
+
 def z_algorithm(pattern, text):
     combined = pattern + "$" + text
     z = calculate_z(combined)
@@ -30,6 +31,7 @@ def z_algorithm(pattern, text):
         if z[i] == pattern_length:
             result.append(i - pattern_length - 1)
     return result
+
 
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:

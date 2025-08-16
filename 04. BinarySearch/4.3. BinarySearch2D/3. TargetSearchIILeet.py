@@ -11,5 +11,5 @@ class Solution:
             else:
                 col -= 1
         return 0
-    
+
 # Link: https://leetcode.com/problems/search-a-2d-matrix-ii/

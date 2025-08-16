@@ -1,4 +1,4 @@
-def romanToInt(s:str) -> int:
+def romanToInt(s: str) -> int:
     # Write your code here
     d = {
         "I": 1,

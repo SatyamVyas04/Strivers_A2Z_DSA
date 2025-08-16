@@ -11,11 +11,12 @@ def possible(arr, day, m, k):
     noOfB += cnt // k
     return noOfB >= m
 
+
 def roseGarden(arr, k, m):
     val = m * k
-    n = len(arr)  
+    n = len(arr)
     if val > n:
-        return -1 
+        return -1
 
     mini = float('inf')
     maxi = float('-inf')

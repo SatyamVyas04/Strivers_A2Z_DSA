@@ -4,7 +4,7 @@ class Solution:
         intervals.sort()
         ans = []
         for i in intervals:
-            if not ans :
+            if not ans:
                 ans.append(i)
             else:
                 lasts, laste = ans[-1]
@@ -14,5 +14,5 @@ class Solution:
                 else:
                     ans.append(i)
         return ans
-    
+
 # Link: https://leetcode.com/problems/insert-interval/

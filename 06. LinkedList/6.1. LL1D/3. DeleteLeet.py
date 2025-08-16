@@ -12,5 +12,5 @@ class Solution:
         """
         node.val = node.next.val
         node.next = node.next.next
-        
+
 # Link: https://leetcode.com/problems/delete-node-in-a-linked-list/

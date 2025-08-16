@@ -8,6 +8,7 @@ class Node:
         
 '''
 
+
 def isPalindrome(head):
     # write your code here
     arr = []
@@ -15,7 +16,7 @@ def isPalindrome(head):
     while temp:
         arr.append(temp.data)
         temp = temp.next
-    
+
     if arr == arr[::-1]:
         return True
     return False

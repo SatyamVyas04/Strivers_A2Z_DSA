@@ -1,8 +1,10 @@
 from typing import List
 
-def generateSubsequences(s:str) -> List[str]:
+
+def generateSubsequences(s: str) -> List[str]:
     # Write your code here.
     ans = []
+
     def gen(curr, s, n, a):
         if curr == n:
             return
@@ -12,7 +14,7 @@ def generateSubsequences(s:str) -> List[str]:
             return
         gen(curr+1, s, n, a)
         gen(curr+1, s, n, a+s[curr])
-    
+
     n = len(s)
     gen(0, s, n, "")
     return ans

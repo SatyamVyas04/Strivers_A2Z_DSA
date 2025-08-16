@@ -8,6 +8,7 @@ class Node:
 
 '''
 
+
 def deleteMiddle(head):
     # Write your code here.
     slow = fast = head
@@ -20,9 +21,9 @@ def deleteMiddle(head):
         prev = slow
         slow = slow.next
         fast = fast.next.next
-    
+
     prev.next = prev.next.next
-    
+
     return head
 
 # Link: https://www.codingninjas.com/studio/problems/delete-middle-node_763267

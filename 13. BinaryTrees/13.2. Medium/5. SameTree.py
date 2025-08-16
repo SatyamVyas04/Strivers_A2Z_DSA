@@ -11,5 +11,5 @@ class Solution:
             return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
         # Values are not equal, they are not identical
         return False
-    
+
 # Link: https://leetcode.com/problems/same-tree/submissions/1303121852/

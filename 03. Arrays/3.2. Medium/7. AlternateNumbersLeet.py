@@ -3,12 +3,12 @@ class Solution:
         p, n = 0, 1
         ans = [0]*len(nums)
         for i in nums:
-            if i>0:
+            if i > 0:
                 ans[p] = i
-                p+=2
+                p += 2
             else:
                 ans[n] = i
-                n+=2
+                n += 2
         return ans
 
 # Link: https://leetcode.com/problems/rearrange-array-elements-by-sign/

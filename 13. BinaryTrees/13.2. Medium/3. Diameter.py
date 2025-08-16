@@ -1,5 +1,6 @@
 class Solution:
-    def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int: # type: ignore
+    # type: ignore
+    def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
         self.ans = 0
 
         def maxheight(node):

@@ -13,14 +13,14 @@ class Solution:
         low = 0
         high = n-1
         a, b = -1, n
-        while low<=high:
+        while low <= high:
             mid = (low + high) // 2
             if nums[mid] >= target:
                 a = mid
                 high = mid - 1
             else:
                 low = mid + 1
-        
+
         low = 0
         high = n-1
         while low <= high:
@@ -30,9 +30,9 @@ class Solution:
                 high = mid - 1
             else:
                 low = mid + 1
-        
+
         if nums[a] != target:
             return (-1, -1)
         return (a, b-1)
-    
+
 # Link: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/

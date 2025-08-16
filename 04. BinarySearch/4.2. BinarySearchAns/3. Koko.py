@@ -1,4 +1,6 @@
 from math import ceil
+
+
 def minimumRateToEatBananas(v: [int], h: int) -> int:
     # Write Your Code Here.
     low = 1
@@ -13,6 +15,7 @@ def minimumRateToEatBananas(v: [int], h: int) -> int:
         else:
             low = mid + 1
     return ans
+
 
 def hourlyTotal(v: [int], mid: int) -> int:
     total = 0

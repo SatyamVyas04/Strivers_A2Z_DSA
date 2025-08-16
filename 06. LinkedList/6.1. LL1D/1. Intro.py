@@ -3,6 +3,7 @@ class Node:
         self.val = val
         self.next = next
 
+
 def constructLL(arr: [int]) -> Node:
     # Write your code here
     head = Node(arr[0])

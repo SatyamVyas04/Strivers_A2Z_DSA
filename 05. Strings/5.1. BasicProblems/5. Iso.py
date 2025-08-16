@@ -1,5 +1,5 @@
 def areIsomorphic(s: str, t: str) -> bool:
-    if len(s)!=len(t):
+    if len(s) != len(t):
         return False
 
     s2t, t2s = {}, {}

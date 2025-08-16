@@ -11,8 +11,8 @@ def majorityElement(v: [int]) -> [int]:
             d[i] = 1
 
         if d[i] == mode:
-            ans.append(i) 
-    
+            ans.append(i)
+
     return sorted(ans)
 
 # Link: https://www.codingninjas.com/studio/problems/majority-element_6915220

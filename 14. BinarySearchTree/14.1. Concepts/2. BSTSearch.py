@@ -5,7 +5,8 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def searchBST(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]: # type: ignore
+    # type: ignore
+    def searchBST(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
         if not root:
             return None
         elif root.val == val:
@@ -14,5 +15,5 @@ class Solution:
             return self.searchBST(root.right, val)
         else:
             return self.searchBST(root.left, val)
-        
+
 # Link: https://leetcode.com/problems/search-in-a-binary-search-tree/submissions/1326549545/

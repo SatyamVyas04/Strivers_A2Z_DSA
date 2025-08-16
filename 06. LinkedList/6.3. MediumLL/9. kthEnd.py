@@ -8,6 +8,7 @@ class Node:
         
 '''
 
+
 def removeKthNode(head, k):
     # Write your code here.
     slow = fast = head
@@ -16,7 +17,7 @@ def removeKthNode(head, k):
 
     if fast == None:
         return head.next
-    
+
     while fast:
         if fast.next:
             fast = fast.next

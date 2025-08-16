@@ -8,6 +8,7 @@ class Node:
         
 '''
 
+
 def firstNode(head):
     # Write your code here
     slow = fast = head
@@ -18,15 +19,15 @@ def firstNode(head):
         if slow == fast:
             flag = True
             break
-    
+
     if flag:
         slow = head
-        while slow!=fast:
+        while slow != fast:
             slow = slow.next
             fast = fast.next
         return slow
 
     else:
         return None
-    
+
 # Link: https://www.codingninjas.com/studio/problems/linked-list-cycle-ii_1112628

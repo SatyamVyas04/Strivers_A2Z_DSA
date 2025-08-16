@@ -1,8 +1,11 @@
 from typing import List
-def printNos(x: int) -> List[int]: 
+
+
+def printNos(x: int) -> List[int]:
     l = []
+
     def recursiveblock(i, x):
-        if i>x:
+        if i > x:
             return
         l.append(i)
         recursiveblock(i+1, x)

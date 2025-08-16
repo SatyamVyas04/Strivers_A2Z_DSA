@@ -2,10 +2,10 @@ class Solution:
     def majorityElement(self, nums: [int]) -> [int]:
         ca, cb, ea, eb = 0, 0, "x", "x"
         for i in nums:
-            if ca == 0 and eb!=i:
+            if ca == 0 and eb != i:
                 ca = 1
                 ea = i
-            elif cb == 0 and ea!=i:
+            elif cb == 0 and ea != i:
                 cb = 1
                 eb = i
             elif ea == i:

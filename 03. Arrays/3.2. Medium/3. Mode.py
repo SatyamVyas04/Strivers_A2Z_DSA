@@ -1,5 +1,6 @@
 from statistics import mode
 
+
 def majorityElement(v: [int]) -> int:
     # Write your code here
     return mode(v)

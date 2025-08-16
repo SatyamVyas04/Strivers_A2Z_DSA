@@ -4,8 +4,8 @@ class Solution:
         for i in arr:
             s += i
             m = max(s, m)
-            if s<0:
+            if s < 0:
                 s = 0
         return m
-    
+
 # Link: https://leetcode.com/problems/maximum-subarray/

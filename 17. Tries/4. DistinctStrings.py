@@ -1,8 +1,10 @@
 from collections import defaultdict
 
+
 class Trie:
     def __init__(self):
-        self.children = defaultdict()   
+        self.children = defaultdict()
+
 
 def countDistinctSubstrings(s):
     cnt = 0

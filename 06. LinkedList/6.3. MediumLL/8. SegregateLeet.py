@@ -16,7 +16,7 @@ class Solution:
             fwd = temp.next
             temp.next = temp.next.next
             temp = fwd
-        if cnt%2 == 0:
+        if cnt % 2 == 0:
             # temp == last odd
             # temp.next == last even
             # [7]->[8]->None
@@ -28,5 +28,5 @@ class Solution:
             temp.next.next = evenstart
             temp.next = None
         return head
-    
+
 # Link: https://leetcode.com/problems/odd-even-linked-list/

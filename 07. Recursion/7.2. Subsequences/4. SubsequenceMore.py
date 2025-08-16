@@ -18,7 +18,7 @@
 #             return
 #         gen(curr+1, s, n, a)
 #         gen(curr+1, s, n, a+s[curr])
-    
+
 #     n = len(s)
 #     gen(0, s, n, "")
 #     return ans
@@ -29,6 +29,7 @@
 
     where 'N' and 'M' are the length of the strings.
 """
+
 
 def func(s: str, n: int) -> int:
     # Initializing 'count' with 1.
@@ -49,6 +50,7 @@ def func(s: str, n: int) -> int:
             count -= temp
 
     return count
+
 
 def moreSubsequence(n: int, m: int, a: str, b: str) -> str:
     if func(a, n) >= func(b, m):

@@ -5,11 +5,12 @@
     where N is the size of array 'A'.
 '''
 
+
 def subarraysWithSumK(a: [int], k: int) -> [[int]]:
     n = len(a)
     ans = []
     # This will keep all those sub-arrays whose sum = ‘k’.
-    # start and end are the starting 
+    # start and end are the starting
     # and the ending indices of our current
     # subarray
     start = 0
@@ -17,18 +18,18 @@ def subarraysWithSumK(a: [int], k: int) -> [[int]]:
     currentSum = 0
 
     # Iterating over 'a'
-    while (start < n) :
+    while (start < n):
         # Increasing the right end
-        # till our sum <= ‘k’ or  
+        # till our sum <= ‘k’ or
         # we are not out of bounds
-        while ((end + 1 < n) and (currentSum + a[end + 1] <= k)) :
+        while ((end + 1 < n) and (currentSum + a[end + 1] <= k)):
             currentSum += a[end + 1]
             end += 1
         # We have found a subarray with the
         # required sum.
-        if (currentSum == k) :
-            temp = [] 
-            for i in range(start,end+1):
+        if (currentSum == k):
+            temp = []
+            for i in range(start, end+1):
                 temp.append(a[i])
             ans.append(temp[:])
 

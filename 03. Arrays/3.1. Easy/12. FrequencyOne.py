@@ -1,7 +1,8 @@
 from typing import *
 from collections import Counter
 
-def getSingleElement(arr : List[int]) -> int:
+
+def getSingleElement(arr: List[int]) -> int:
     # Write your code here.
     c = dict(Counter(arr))
     for i in c.keys():

@@ -16,5 +16,5 @@ class Solution:
             ans += cnt
             r += 1
         return ans
-    
+
 # Link: https://leetcode.com/problems/count-number-of-nice-subarrays/description/

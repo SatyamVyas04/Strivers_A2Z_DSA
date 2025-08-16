@@ -1,6 +1,7 @@
 from typing import *
 
-def searchInARotatedSortedArrayII(arr : List[int], k : int) -> bool:
+
+def searchInARotatedSortedArrayII(arr: List[int], k: int) -> bool:
     # Write your code here.
     low = 0
     high = len(arr) - 1
@@ -19,7 +20,7 @@ def searchInARotatedSortedArrayII(arr : List[int], k : int) -> bool:
                 low = mid + 1
         else:
             if arr[mid] <= k <= arr[high]:
-                low = mid + 1    
+                low = mid + 1
             else:
                 high = mid - 1
     return False

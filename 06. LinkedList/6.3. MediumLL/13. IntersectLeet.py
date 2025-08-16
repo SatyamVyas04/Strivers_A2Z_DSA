@@ -5,7 +5,7 @@
 #         self.next = None
 
 class Solution:
-    def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:  
+    def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
         n1, n2 = 0, 0
         a = headA
         b = headB
@@ -15,7 +15,7 @@ class Solution:
         while b:
             n2 += 1
             b = b.next
-        
+
         a = headA
         b = headB
         if n1 < n2:
@@ -32,5 +32,5 @@ class Solution:
                 a = a.next
                 b = b.next
         return None
-    
+
 # Link: https://leetcode.com/problems/intersection-of-two-linked-lists/

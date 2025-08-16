@@ -5,6 +5,7 @@
     N and M are the sizes of array 'A' and 'B' respectively.
 '''
 
+
 def sortedArray(a: [int], b: [int]) -> [int]:
 
     # return sorted(list(set(a).union(set(b))))

@@ -7,5 +7,5 @@ def getSecondOrderElements(n: int,  a: [int]) -> [int]:
     else:
         a.sort(reverse=True)
         return [a[1], a[-2]]
-    
+
 # Link: https://www.codingninjas.com/studio/problems/ninja-and-the-second-order-elements_6581960

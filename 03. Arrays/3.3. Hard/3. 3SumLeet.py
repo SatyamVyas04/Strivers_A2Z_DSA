@@ -5,9 +5,9 @@ class Solution:
         # Spliting
         n, p, z = [], [], []
         for i in nums:
-            if i>0:
+            if i > 0:
                 p.append(i)
-            elif i<0:
+            elif i < 0:
                 n.append(i)
             else:
                 z.append(i)
@@ -20,10 +20,9 @@ class Solution:
                 if -1*num in N:
                     res.add((-1*num, 0, num))
 
-        
         # Case2: 0, 0, 0
-        if len(z)>=3:
-            res.add((0,0,0))
+        if len(z) >= 3:
+            res.add((0, 0, 0))
 
         # Case 3: 2 negatives == 1 positive
         for i in range(len(n)):

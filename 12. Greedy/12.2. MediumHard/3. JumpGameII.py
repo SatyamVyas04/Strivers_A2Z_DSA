@@ -10,5 +10,5 @@ class Solution:
             r = farthest
             res += 1
         return res
-    
+
 # Link: https://leetcode.com/problems/jump-game-ii/description/

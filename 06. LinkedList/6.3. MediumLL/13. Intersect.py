@@ -3,8 +3,9 @@ class Node:
         self.data = data
         self.next = None
 
+
 def findIntersection(firstHead, secondHead):
-	# Write your code here.
+    # Write your code here.
     temp1 = firstHead
     temp2 = secondHead
     val: [Node] = []

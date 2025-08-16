@@ -1,4 +1,4 @@
-def pascalTriangle(n : int) -> list[list[int]]:
+def pascalTriangle(n: int) -> list[list[int]]:
     # Write your code here.
     soln = [[1]]
     if n == 1:
@@ -6,7 +6,7 @@ def pascalTriangle(n : int) -> list[list[int]]:
     for i in range(n-1):
         row = []
         lastrow = soln[-1]
-        for i in range(0, len(lastrow)) :
+        for i in range(0, len(lastrow)):
             j = i+1
             if j < len(lastrow):
                 row.append(lastrow[i] + lastrow[j])

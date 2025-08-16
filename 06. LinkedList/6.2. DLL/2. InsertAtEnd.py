@@ -10,11 +10,11 @@ def insertAtTail(head: Node, k: int) -> Node:
     if not head:
         head = Node(k)
         return head
-    
+
     temp = head
     while temp and temp.next:
         temp = temp.next
-    
+
     x = Node(k)
     x.prev = temp
     temp.next = x

@@ -17,5 +17,5 @@ class Solution:
             else:
                 high = mid - 1
         return low
-    
+
 # Link: https://leetcode.com/problems/split-array-largest-sum/

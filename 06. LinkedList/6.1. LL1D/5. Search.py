@@ -8,6 +8,7 @@ class Node:
         
 '''
 
+
 def searchInLinkedList(head, k):
     # Your code goes here.
     temp = head

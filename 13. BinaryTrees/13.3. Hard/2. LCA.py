@@ -9,5 +9,5 @@ class Solution:
         if not right:
             return left
         return root
-    
+
 # Link: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/

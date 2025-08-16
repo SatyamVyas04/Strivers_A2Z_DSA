@@ -1,6 +1,7 @@
 from typing import *
 
-def mergeTwoSortedArraysWithoutExtraSpace(a : List[int], b : List[int]) -> int:
+
+def mergeTwoSortedArraysWithoutExtraSpace(a: List[int], b: List[int]) -> int:
     # Write your code here.
     n, m = len(a), len(b)
     left, right = n-1, 0

@@ -1,4 +1,6 @@
 import heapq
+
+
 def minimiseMaxDistance(arr: [int], k: int) -> float:
     # Write your code here.
     n = len(arr)

@@ -12,7 +12,7 @@ def deleteAllOccurrences(head: Node, k: int) -> Node:
         head = head.next
     if head.data == k:
         return None
-    
+
     temp = head
     while temp and temp.next:
         if temp.next.data == k:

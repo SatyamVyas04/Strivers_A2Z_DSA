@@ -1,8 +1,9 @@
 from typing import Optional
 
+
 def createAtoi(s: str) -> int:
     # write your code here
-    INT_MAX =  2147483647
+    INT_MAX = 2147483647
     INT_MIN = -2147483648
 
     s = s.strip()

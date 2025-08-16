@@ -20,6 +20,7 @@
 
 from typing import List
 
+
 def generateStringHelper(K: int, string: str, n: int, ans: List[str]):
     # Print binary string without consecutive 1's.
     if n == K:
@@ -38,6 +39,7 @@ def generateStringHelper(K: int, string: str, n: int, ans: List[str]):
         generateStringHelper(K, string, n + 1, ans)
         string = string[:-1] + '1'
         generateStringHelper(K, string, n + 1, ans)
+
 
 def generateString(N: int) -> List[str]:
     ans = []

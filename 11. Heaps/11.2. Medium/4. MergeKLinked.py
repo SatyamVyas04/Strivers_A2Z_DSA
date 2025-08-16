@@ -1,4 +1,6 @@
 from queue import PriorityQueue
+
+
 class Solution:
     def mergeKLists(self, lists):
         queue = PriorityQueue()
@@ -6,7 +8,7 @@ class Solution:
             if l:
                 queue.put((l.val, idx, l))
 
-        dummy = ListNode(0) # type: ignore
+        dummy = ListNode(0)  # type: ignore
         temp = dummy
         while not queue.empty():
             val, idx, node = queue.get()

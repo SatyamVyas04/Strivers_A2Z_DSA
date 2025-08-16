@@ -1,5 +1,5 @@
 class Solution:
-    def maxDepth(self, root: Optional[TreeNode]) -> int: # type: ignore
+    def maxDepth(self, root: Optional[TreeNode]) -> int:  # type: ignore
         def dfs(root, depth):
             if not root:
                 return depth

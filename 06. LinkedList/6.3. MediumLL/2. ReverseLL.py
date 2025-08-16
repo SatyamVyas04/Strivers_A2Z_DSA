@@ -8,11 +8,12 @@ class Node:
         
 '''
 
+
 def reverseLinkedList(head):
     # write your code here
     if not head.next:
         return head
-    
+
     curr = head
     prev = next = None
     while curr:

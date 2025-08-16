@@ -46,8 +46,9 @@ from typing import Optional
 
 
 class Solution:
-    def countNodes(self, root: Optional[TreeNode]) -> int: #type: ignore
+    def countNodes(self, root: Optional[TreeNode]) -> int:  # type: ignore
         self.count = 0
+
         def helper(root):
             if root:
                 self.count += 1
@@ -55,5 +56,5 @@ class Solution:
                 helper(root.right)
         helper(root)
         return self.count
-    
+
 # Link: https://leetcode.com/problems/count-complete-tree-nodes/

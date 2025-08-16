@@ -6,7 +6,7 @@ class Solution:
 
         if fast == None:
             return head.next
-        
+
         while fast:
             if fast.next:
                 fast = fast.next
@@ -16,5 +16,5 @@ class Solution:
 
         slow.next = slow.next.next
         return head
-    
+
 # Link: https://leetcode.com/problems/remove-nth-node-from-end-of-list/

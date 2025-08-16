@@ -8,10 +8,10 @@ def searchInsert(arr: list[int], x: int) -> int:
         mid = (low + high) // 2
         if arr[mid] >= x:
             ans = mid
-            high = mid - 1 
+            high = mid - 1
         else:
             low = mid + 1
-            
+
     return ans
 
 # Link: https://www.codingninjas.com/studio/problems/algorithm-to-find-best-insert-position-in-sorted-array_839813

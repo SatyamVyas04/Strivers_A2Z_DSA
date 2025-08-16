@@ -1,6 +1,7 @@
 from typing import *
 
-def searchElement(matrix : List[List[int]], target : int) -> int:
+
+def searchElement(matrix: List[List[int]], target: int) -> int:
     # Write your code here.
     n, m = len(matrix), len(matrix[0])
     row = 0

@@ -1,6 +1,7 @@
 from typing import *
 
-def spiralMatrix(matrix : List[List[int]]) -> List[int]:
+
+def spiralMatrix(matrix: List[List[int]]) -> List[int]:
     # Write your code here.
     n = len(matrix)
     m = len(matrix[0])
@@ -14,7 +15,7 @@ def spiralMatrix(matrix : List[List[int]]) -> List[int]:
         for i in range(top, bottom+1):
             ans.append(matrix[i][right])
         right -= 1
-        if top <= bottom: 
+        if top <= bottom:
             for i in range(right, left-1, -1):
                 ans.append(matrix[bottom][i])
             bottom -= 1

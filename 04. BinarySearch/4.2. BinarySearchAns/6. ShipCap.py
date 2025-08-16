@@ -11,6 +11,7 @@ def findDays(weights, cap):
             load += weights[i]
     return days
 
+
 def leastWeightCapacity(weights, d):
     # Find the maximum and the summation
     low = max(weights)

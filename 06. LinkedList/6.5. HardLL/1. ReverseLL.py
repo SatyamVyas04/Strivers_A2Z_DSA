@@ -4,10 +4,13 @@ from collections import *
 from math import *
 
 # Linked List Node structure for reference
+
+
 class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
+
 
 def reverse(root):
     curr = root
@@ -19,6 +22,7 @@ def reverse(root):
         curr = nex
     return prev
 
+
 def findkth(root, k):
     for _ in range(k-1):
         if root:
@@ -26,6 +30,7 @@ def findkth(root, k):
         else:
             break
     return root
+
 
 def kReverse(head, k):
     # Write your code here
@@ -38,7 +43,7 @@ def kReverse(head, k):
         kthnode = findkth(temp, k)
         if not kthnode:
             if prev:
-                prev.next = temp;
+                prev.next = temp
             break
         nextnode = kthnode.next
         kthnode.next = None
@@ -47,9 +52,9 @@ def kReverse(head, k):
             head = kthnode
         else:
             prev.next = kthnode
-        
+
         prev = temp
         temp = nextnode
     return head
- 
+
 # Link: https://www.codingninjas.com/studio/problems/reverse-list-in-k-groups_983644

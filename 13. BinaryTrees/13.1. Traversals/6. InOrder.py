@@ -5,8 +5,10 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]: #type: ignore
+    # type: ignore
+    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         self.ans = []
+
         def dfs(root):
             if not root:
                 return

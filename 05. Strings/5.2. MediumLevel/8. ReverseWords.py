@@ -1,4 +1,4 @@
-def reverseString(s:str) -> str:
+def reverseString(s: str) -> str:
     # Write your code here
     return " ".join(s.split()[::-1])
 

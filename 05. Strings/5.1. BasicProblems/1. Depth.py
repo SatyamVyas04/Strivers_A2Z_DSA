@@ -1,4 +1,4 @@
-def maxDepth(s:str) -> int:
+def maxDepth(s: str) -> int:
     # Write your code here.
     depth = 0
     ans = 0

@@ -1,6 +1,7 @@
 def isPalindrome(string: str) -> bool:
     x = list(string)
     l2 = []
+
     def recur(x):
         if not x:
             return
@@ -11,5 +12,5 @@ def isPalindrome(string: str) -> bool:
         return True
     else:
         return False
-    
+
 # Link: https://www.codingninjas.com/studio/problems/check-palindrome-recursive_624386

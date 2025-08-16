@@ -11,6 +11,7 @@ def addOne(head: Node) -> Node:
         return Node(1, head)
     return head
 
+
 def carrygen(temp):
     if temp == None:
         return 1

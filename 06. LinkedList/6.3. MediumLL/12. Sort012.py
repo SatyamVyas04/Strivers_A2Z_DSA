@@ -3,6 +3,7 @@ class Node:
         self.data = data
         self.next = next
 
+
 def sortList(head):
     # Write your code here
     temp = head
@@ -22,16 +23,16 @@ def sortList(head):
             b = b.next
         else:
             c.next = Node(2)
-            c = c.next   
+            c = c.next
         temp = temp.next
-    
+
     if zero.next:
         zero = zero.next
     if ones.next:
         ones = ones.next
     if twos.next:
         twos = twos.next
-    
+
     a.next = ones
     b.next = twos
     return zero

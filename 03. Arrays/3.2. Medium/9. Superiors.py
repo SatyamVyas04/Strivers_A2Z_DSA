@@ -1,6 +1,7 @@
 from typing import *
 
-def superiorElements(a : List[int]) -> List[int]:
+
+def superiorElements(a: List[int]) -> List[int]:
     # Write your code here.
     s = [a[-1]]
     maxi = a[-1]

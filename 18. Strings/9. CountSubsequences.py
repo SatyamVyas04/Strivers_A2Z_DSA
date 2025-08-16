@@ -1,5 +1,5 @@
 class Solution:
-    def countPS(self,s):
+    def countPS(self, s):
         n = len(s)
         t = [[0] * n for _ in range(n)]
         for i in range(n):

@@ -13,5 +13,5 @@ class Solution:
             prev = curr
             curr = next
         return prev
-    
+
 # Link: https://leetcode.com/problems/reverse-linked-list/

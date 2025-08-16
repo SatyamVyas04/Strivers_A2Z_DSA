@@ -15,9 +15,9 @@ class Solution:
             prev = slow
             slow = slow.next
             fast = fast.next.next
-        
+
         prev.next = prev.next.next
-        
+
         return head
-    
+
 # Link: https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/

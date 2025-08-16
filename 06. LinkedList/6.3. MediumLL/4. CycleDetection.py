@@ -7,7 +7,8 @@ class Node :
         self.next = None
 '''
 
-def detectCycle(head) :
+
+def detectCycle(head):
     # Write your code here.
     slow = fast = head
     while fast and fast.next:
@@ -15,7 +16,7 @@ def detectCycle(head) :
         fast = fast.next.next
         if slow == fast:
             return True
-            
+
     return False
 
 # Link: https://www.codingninjas.com/studio/problems/cycle-detection-in-a-singly-linked-list_628974

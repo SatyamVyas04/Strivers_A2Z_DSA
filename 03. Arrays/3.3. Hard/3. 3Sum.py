@@ -1,5 +1,6 @@
 from typing import List
 
+
 def triplet(n: int, nums: List[int]) -> List[List[int]]:
     # Write your code here.
     res = set()
@@ -43,4 +44,3 @@ def triplet(n: int, nums: List[int]) -> List[List[int]]:
 
     # Convert set of tuples to list of lists
     return [list(triplet) for triplet in res]
-

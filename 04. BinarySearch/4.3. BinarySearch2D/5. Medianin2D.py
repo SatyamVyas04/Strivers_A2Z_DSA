@@ -1,4 +1,6 @@
 from bisect import bisect_right
+
+
 def median(matrix: list[list[int]], m: int, n: int) -> int:
     maximum = int("-inf")
     minimum = int("inf")

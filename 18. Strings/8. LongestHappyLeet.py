@@ -18,5 +18,5 @@ class Solution:
     def longestPrefix(self, s: str) -> str:
         lps = lps_maker(s)
         return s[:lps[-1]]
-    
+
 # Link: https://leetcode.com/problems/longest-happy-prefix/

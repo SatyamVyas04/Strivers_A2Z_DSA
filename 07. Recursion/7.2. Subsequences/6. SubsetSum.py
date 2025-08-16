@@ -1,6 +1,7 @@
 from typing import *
 
-def isSubsetPresent(n:int, k: int, a: List[int]) -> bool:
+
+def isSubsetPresent(n: int, k: int, a: List[int]) -> bool:
     # Write your code here.
     def helper(n, k, a, total, idx) -> bool:
         if total == k:
@@ -15,7 +16,7 @@ def isSubsetPresent(n:int, k: int, a: List[int]) -> bool:
         if c2:
             return True
         return False
-        
+
     return helper(n, k, a, 0, 0)
 
 # Link: https://www.codingninjas.com/studio/problems/subset-sum_630213

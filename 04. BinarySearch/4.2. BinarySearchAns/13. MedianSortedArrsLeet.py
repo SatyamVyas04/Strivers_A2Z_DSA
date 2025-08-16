@@ -5,7 +5,7 @@ class Solution:
         if n1 > n2:
             a, b = b, a
             n1, n2 = n2, n1
-        
+
         low, high = 0, n1
         left = (n1 + n2 + 1) // 2
         n = n1 + n2
@@ -20,12 +20,12 @@ class Solution:
                 r1 = a[mid1]
             if mid2 < n2:
                 r2 = b[mid2]
-            if mid1-1>=0:
+            if mid1-1 >= 0:
                 l1 = a[mid1-1]
-            if mid2-1>=0:
+            if mid2-1 >= 0:
                 l2 = b[mid2-1]
             if (l1 <= r2) and (l2 <= r1):
-                if n%2 == 1:
+                if n % 2 == 1:
                     return float(max(l1, l2))
                 else:
                     return float((max(l1, l2) + min(r1, r2))/2)
@@ -34,5 +34,5 @@ class Solution:
             else:
                 low = mid1 + 1
         return -1
-    
+
 # Link: https://leetcode.com/problems/median-of-two-sorted-arrays/

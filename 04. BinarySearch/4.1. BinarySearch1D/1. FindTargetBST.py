@@ -13,10 +13,10 @@ def search(nums: list[int], target: int):
     else:
         return -1
 
-    
-n = int (input())
-arr = list(map(int,input().strip().split()))[:n]
-target = int (input())
-print (search(arr, target))
+
+n = int(input())
+arr = list(map(int, input().strip().split()))[:n]
+target = int(input())
+print(search(arr, target))
 
 # Link: https://www.codingninjas.com/studio/problems/binary-search_972

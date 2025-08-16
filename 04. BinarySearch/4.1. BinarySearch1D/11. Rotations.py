@@ -1,9 +1,9 @@
-def findKRotation(arr : list[int]) -> int:
+def findKRotation(arr: list[int]) -> int:
     # Write your code here.
     n = len(arr)
     if n == 1:
         return 0
-    
+
     low = 0
     high = n-1
     ans = high
