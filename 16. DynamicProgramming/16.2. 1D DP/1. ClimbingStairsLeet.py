@@ -2,7 +2,7 @@
 # 2. Base case: n equal to 1, generates 1 answer, n equal to 2 generates 2
 # 3. Memoize: dp[n] can be created, where dp[i] denotes the number of ways in which we can climb upto ith stair
 # 4. Tabulation: use dp[] calls
-# 5. Space: Will see later
+# 5. Space: Will see later -> basically we just need 3 variables, kinda like fibonacci
 
 class Solution:
     def climbStairs(self, n: int) -> int:
