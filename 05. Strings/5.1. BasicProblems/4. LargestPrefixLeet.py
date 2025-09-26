@@ -8,7 +8,7 @@
 #         return short
 
 class Solution:
-    def longestCommonPrefix(self, inp: [str]) -> str:
+    def longestCommonPrefix(self, inp: list[str]) -> str:
         ans = ""
         n = len(inp)
         mini = len(min(inp, key=len))
