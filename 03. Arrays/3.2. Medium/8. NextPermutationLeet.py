@@ -1,5 +1,5 @@
 class Solution:
-    def nextPermutation(self, arr: [int]) -> None:
+    def nextPermutation(self, arr: list[int]) -> None:
         ptr = -1
         n = len(arr)
         flag = 0

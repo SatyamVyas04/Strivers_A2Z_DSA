@@ -1,5 +1,5 @@
 class Solution:
-    def rotate(self, A: [[int]]) -> None:
+    def rotate(self, A: list[list[int]]) -> None:
         """
         Do not return anything, modify matrix in-place instead.
         """

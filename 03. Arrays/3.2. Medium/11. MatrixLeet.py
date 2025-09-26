@@ -1,5 +1,5 @@
 class Solution:
-    def setZeroes(self, matrix: [[int]]) -> None:
+    def setZeroes(self, matrix: list[list[int]]) -> None:
         n = len(matrix)
         m = len(matrix[0])
         # row = matrix[..][0]

@@ -1,7 +1,7 @@
 from statistics import mode
 
 
-def majorityElement(v: [int]) -> int:
+def majorityElement(v: list[int]) -> int:
     # Write your code here
     return mode(v)
 

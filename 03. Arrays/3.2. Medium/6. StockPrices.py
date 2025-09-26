@@ -1,4 +1,4 @@
-def bestTimeToBuyAndSellStock(prices: [int]) -> int:
+def bestTimeToBuyAndSellStock(prices: list[int]) -> int:
     # Write your code here.
     mini = prices[0]
     maxprofit = 0
@@ -8,4 +8,4 @@ def bestTimeToBuyAndSellStock(prices: [int]) -> int:
         mini = min(mini, prices[i])
     return maxprofit
 
-# Link: https://www.codingninjas.com/studio/problems/best-time-to-buy-and-sell-stock_6194560
+# Link: https://www.codingninjas.com/studio/problems/best-time-to-bwuy-and-sell-stock_6194560

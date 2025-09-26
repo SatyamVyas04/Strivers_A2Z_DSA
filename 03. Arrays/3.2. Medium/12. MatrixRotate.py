@@ -1,7 +1,7 @@
 from typing import *
 
 
-def rotateMatrix(mat: [[int]]):
+def rotateMatrix(mat: list[list[int]]):
     # Write your code here.
     n = len(mat)
     m = len(mat[0])
