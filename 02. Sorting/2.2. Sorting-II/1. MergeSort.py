@@ -1,4 +1,4 @@
-def mergeSort(arr: [int], l: int, r: int):
+def mergeSort(arr: list[int], l: int, r: int):
     if l < r:
         mid = (l + r) // 2
         mergeSort(arr, l, mid)
