@@ -5,7 +5,7 @@ class Node:
         self.prev = prev
 
 
-def constructDLL(arr: [int]) -> Node:
+def constructDLL(arr: list[int]) -> Node:
     # Write your code here
     head = Node(0)
     temp = head

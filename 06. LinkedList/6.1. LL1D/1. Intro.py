@@ -4,7 +4,7 @@ class Node:
         self.next = next
 
 
-def constructLL(arr: [int]) -> Node:
+def constructLL(arr: list[int]) -> Node:
     # Write your code here
     head = Node(arr[0])
     temp = head

@@ -5,7 +5,7 @@ class Node:
         self.prev = prev
 
 
-def findPairs(head: Node, k: int) -> [[int]]:
+def findPairs(head: Node, k: int) -> list[list[int]]:
     # Write your code here.
     # Return boolean true or false.
     prev = set()
