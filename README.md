@@ -1,4 +1,4 @@
-![Banner](./banner.png)
+![Banner](./assets/banner.png)
 
 This repository contains solutions to the Data Structures and Algorithms (DSA) problems covered in Striver's A2Z DSA Course. The problems are sourced from various coding sites such as Coding Ninjas, LeetCode, and more.
 
