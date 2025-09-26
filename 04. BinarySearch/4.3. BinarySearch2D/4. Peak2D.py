@@ -1,4 +1,4 @@
-def findPeakGrid(arr: [[int]]) -> [int]:
+def findPeakGrid(arr: list[list[int]]) -> list[int]:
     # Write your code here.
     n = len(arr)  # Size of the array
     m = len(arr[0])

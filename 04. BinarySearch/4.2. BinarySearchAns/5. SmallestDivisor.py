@@ -4,7 +4,7 @@ from collections import *
 from math import *
 
 
-def smallestDivisor(arr: [int], limit: int) -> int:
+def smallestDivisor(arr: list[int], limit: int) -> int:
     # Write your code here.
     low = 1
     high = max(arr)

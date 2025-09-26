@@ -10,7 +10,7 @@ def subarrcheck(arr, cap):
     return s
 
 
-def largestSubarraySumMinimized(a: [int], k: int) -> int:
+def largestSubarraySumMinimized(a: list[int], k: int) -> int:
     # Write Your Code Here
     if k > len(a):
         return -1

@@ -1,7 +1,7 @@
 import heapq
 
 
-def minimiseMaxDistance(arr: [int], k: int) -> float:
+def minimiseMaxDistance(arr: list[int], k: int) -> float:
     # Write your code here.
     n = len(arr)
     inserted = [0]*(n-1)

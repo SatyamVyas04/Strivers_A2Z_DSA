@@ -1,5 +1,5 @@
 class Solution:
-    def findMin(self, arr: [int]) -> int:
+    def findMin(self, arr: list[int]) -> int:
         n = len(arr)
         if n == 1:
             return arr[0]

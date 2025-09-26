@@ -2,7 +2,7 @@ from math import ceil
 
 
 class Solution:
-    def smallestDivisor(self, nums: [int], threshold: int) -> int:
+    def smallestDivisor(self, nums: list[int], threshold: int) -> int:
         low = 1
         high = max(nums)
         n = len(nums)

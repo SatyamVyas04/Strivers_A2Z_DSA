@@ -1,4 +1,4 @@
-def kthElement(a: [int], n1: int, b: [int], n2: int, k: int) -> int:
+def kthElement(a: list[int], n1: int, b: list[int], n2: int, k: int) -> int:
     # Write your code from here.
     if n1 > n2:
         a, b = b, a

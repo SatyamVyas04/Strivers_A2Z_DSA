@@ -1,5 +1,5 @@
 class Solution:
-    def shipWithinDays(self, weights: [int], days: int) -> int:
+    def shipWithinDays(self, weights: list[int], days: int) -> int:
         n = len(weights)
         low = max(weights)
         high = sum(weights)

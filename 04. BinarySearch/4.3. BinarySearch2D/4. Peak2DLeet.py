@@ -1,5 +1,5 @@
 class Solution:
-    def findPeakGrid(self, arr: [[int]]) -> [int]:
+    def findPeakGrid(self, arr: list[list[int]]) -> list[int]:
         n = len(arr)  # Size of the array
         m = len(arr[0])
 

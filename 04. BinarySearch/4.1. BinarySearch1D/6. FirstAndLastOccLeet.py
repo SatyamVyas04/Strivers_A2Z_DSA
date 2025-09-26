@@ -1,5 +1,5 @@
 class Solution:
-    def searchRange(self, nums: [int], target: int) -> [int]:
+    def searchRange(self, nums: list[int], target: int) -> list[int]:
         n = len(nums)
 
         if n == 0:

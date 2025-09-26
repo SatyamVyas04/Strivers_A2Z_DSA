@@ -1,5 +1,5 @@
 class Solution:
-    def findPeakElement(self, arr: [int]) -> int:
+    def findPeakElement(self, arr: list[int]) -> int:
         n = len(arr)  # Size of the array
 
         # Edge cases:

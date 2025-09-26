@@ -1,5 +1,5 @@
 class Solution:
-    def splitArray(self, nums: [int], k: int) -> int:
+    def splitArray(self, nums: list[int], k: int) -> int:
         low = max(nums)
         high = sum(nums)
         while low <= high:

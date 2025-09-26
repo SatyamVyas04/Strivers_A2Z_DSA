@@ -12,7 +12,7 @@ def search(arr, target):
     return 0
 
 
-def searchMatrix(mat: [[int]], target: int) -> bool:
+def searchMatrix(mat: list[list[int]], target: int) -> bool:
     # Write your code here.
     for i in range(len(mat)):
         x = search(mat[i], target)

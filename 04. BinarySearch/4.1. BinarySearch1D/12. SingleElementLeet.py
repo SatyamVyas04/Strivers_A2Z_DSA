@@ -1,5 +1,5 @@
 class Solution:
-    def singleNonDuplicate(self, arr: [int]) -> int:
+    def singleNonDuplicate(self, arr: list[int]) -> int:
         n = len(arr)
         if n == 1:
             return arr[0]

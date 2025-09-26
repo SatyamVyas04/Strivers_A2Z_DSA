@@ -1,5 +1,5 @@
 class Solution:
-    def minDays(self, bloomDay: [int], m: int, k: int) -> int:
+    def minDays(self, bloomDay: list[int], m: int, k: int) -> int:
         n = len(bloomDay)
         if m*k > n:
             return -1
