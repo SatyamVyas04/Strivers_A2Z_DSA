@@ -1,5 +1,5 @@
 class Solution:
-    def generate(self, numRows: int) -> [[int]]:
+    def generate(self, numRows: int) -> list[list[int]]:
         soln = []
         for i in range(1, numRows+1):
             soln.append(self.generaterow(i))

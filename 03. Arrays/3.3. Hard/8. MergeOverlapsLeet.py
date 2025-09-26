@@ -1,5 +1,5 @@
 class Solution:
-    def merge(self, intervals: [[int]]) -> [[int]]:
+    def merge(self, intervals: list[list[int]]) -> list[list[int]]:
         intervals.sort()
         ans = [intervals.pop(0)]
         for i in intervals:

@@ -1,5 +1,5 @@
 class Solution:
-    def majorityElement(self, nums: [int]) -> [int]:
+    def majorityElement(self, nums: list[int]) -> list[int]:
         ca, cb, ea, eb = 0, 0, "x", "x"
         for i in nums:
             if ca == 0 and eb != i:

@@ -1,4 +1,4 @@
-def findMissingRepeatingNumbers(a: [int]) -> [int]:
+def findMissingRepeatingNumbers(a: list[int]) -> list[int]:
     # Write your code here
     n = len(a)
     currsum = sum(a)

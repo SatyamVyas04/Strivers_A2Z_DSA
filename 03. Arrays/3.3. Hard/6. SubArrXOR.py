@@ -6,7 +6,7 @@
 """
 
 
-def subarraysWithSumK(a: [int], b: int) -> int:
+def subarraysWithSumK(a: list[int], b: int) -> int:
     count = 0
     # number of subarrays
     # whose XOR is equal to ‘b’

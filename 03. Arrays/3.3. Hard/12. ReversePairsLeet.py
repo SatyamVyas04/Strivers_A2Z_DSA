@@ -1,5 +1,5 @@
 class Solution:
-    def reversePairs(self, nums: [int]) -> int:
+    def reversePairs(self, nums: list[int]) -> int:
 
         def ms(l, r):
             if l >= r:

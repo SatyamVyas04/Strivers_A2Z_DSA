@@ -1,4 +1,4 @@
-def majorityElement(v: [int]) -> [int]:
+def majorityElement(v: list[int]) -> list[int]:
     # Write your code here
     d = {}
     ans = []

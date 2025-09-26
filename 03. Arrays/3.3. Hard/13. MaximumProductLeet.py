@@ -1,5 +1,5 @@
 class Solution:
-    def maxProduct(self, nums: [int]) -> int:
+    def maxProduct(self, nums: list[int]) -> int:
         ans = float('-inf')
         n = nums.__len__()
         prefix, suffix = 0, 0
