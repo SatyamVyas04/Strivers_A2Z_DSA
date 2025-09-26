@@ -6,7 +6,7 @@
 """
 
 
-def traffic(n: int, m: int, vehicle: [int]) -> int:
+def traffic(n: int, m: int, vehicle: list[int]) -> int:
     # Create ans, count and right, and assign with 0.
     ans = 0
     count = 0

@@ -1,5 +1,5 @@
 class Solution:
-    def moveZeroes(self, nums: [int]) -> None:
+    def moveZeroes(self, nums: list[int]) -> None:
         i = 0
         n = len(nums)
         while i < n:

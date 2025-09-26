@@ -1,4 +1,4 @@
-def longestSubarrayWithSumK(a: [int], k: int) -> int:
+def longestSubarrayWithSumK(a: list[int], k: int) -> int:
     # Write your code here
     left, right = 0, 0
     n = len(a)

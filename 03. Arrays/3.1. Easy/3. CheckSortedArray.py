@@ -1,4 +1,4 @@
-def isSorted(n: int,  a: [int]) -> int:
+def isSorted(n: int,  a: list[int]) -> int:
     # Write your code here.
     for i in range(0, n-1):
         if a[i] > a[i+1]:

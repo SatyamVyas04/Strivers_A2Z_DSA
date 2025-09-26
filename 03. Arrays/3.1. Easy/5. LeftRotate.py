@@ -3,7 +3,7 @@ from collections import *
 from math import *
 
 
-def rotateArray(arr: [], n: int) -> []:
+def rotateArray(arr: list, n: int) -> list:
     # Write your code from here.
     first_element = arr.pop(0)
     arr.append(first_element)

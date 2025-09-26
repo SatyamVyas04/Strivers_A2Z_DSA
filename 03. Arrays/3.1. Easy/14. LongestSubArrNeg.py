@@ -3,7 +3,7 @@ from collections import *
 from math import *
 
 
-def getLongestSubarray(a: [int], k: int) -> int:
+def getLongestSubarray(a: list[int], k: int) -> int:
     # Write your code here
     n = len(a)
     preSumMap = {}

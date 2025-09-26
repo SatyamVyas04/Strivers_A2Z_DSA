@@ -1,4 +1,4 @@
-def getSecondOrderElements(n: int,  a: [int]) -> [int]:
+def getSecondOrderElements(n: int,  a: list[int]) -> list[int]:
     # Write your code here.
     if n == 2:
         return a

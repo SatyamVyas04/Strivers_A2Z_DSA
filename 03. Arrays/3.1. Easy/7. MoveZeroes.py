@@ -1,4 +1,4 @@
-def moveZeros(n: int,  a: [int]) -> [int]:
+def moveZeros(n: int,  a: list[int]) -> list[int]:
     # Write your code here.
     i = 0
     while i < n:

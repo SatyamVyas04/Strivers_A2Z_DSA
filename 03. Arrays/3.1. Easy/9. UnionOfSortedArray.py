@@ -6,7 +6,7 @@
 '''
 
 
-def sortedArray(a: [int], b: [int]) -> [int]:
+def sortedArray(a: list[int], b: list[int]) -> list[int]:
 
     # return sorted(list(set(a).union(set(b))))
 

@@ -1,5 +1,5 @@
 class Solution:
-    def rotate(self, arr: [int], k: int) -> None:
+    def rotate(self, arr: list[int], k: int) -> None:
         k = k % len(arr)
         arr[:] = arr[-k:] + arr[:-k]
 
