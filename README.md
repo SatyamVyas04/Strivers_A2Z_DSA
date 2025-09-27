@@ -1,5 +1,3 @@
-# Striver's A2Z DSA Solutions
-
 ![Banner](./assets/banner.png)
 
 <p align="center">
@@ -8,8 +6,6 @@
   <a href="https://github.com/SatyamVyas04/STRIVERS_A2Z_DSA/issues"><img src="https://img.shields.io/github/issues/SatyamVyas04/STRIVERS_A2Z_DSA?style=for-the-badge&logo=github" alt="Issues"/></a>
   <a href="https://github.com/SatyamVyas04/STRIVERS_A2Z_DSA/blob/main/LICENSE"><img src="https://img.shields.io/github/license/SatyamVyas04/STRIVERS_A2Z_DSA?style=for-the-badge" alt="License"/></a>
 </p>
-
----
 
 ## Index
 
@@ -20,8 +16,6 @@
 - [Star History](#star-history)
 - [License](#license)
 
----
-
 ## About the Project
 
 Striver's **A2Z DSA Course** is a comprehensive program for mastering Data Structures and Algorithms.
@@ -29,13 +23,9 @@ This repository provides **solutions to all problems covered in the course**, so
 
 The goal is to make learning easier by offering well-structured implementations that align with the course roadmap.
 
----
-
 ## Course Link
 
 Find the official Striver's A2Z DSA Course [here](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
-
----
 
 ## Folder Structure
 
@@ -60,8 +50,6 @@ Find the official Striver's A2Z DSA Course [here](https://takeuforward.org/striv
 17. [Tries](./17.%20Tries)
 18. [Strings (Advanced)](./18.%20Strings)
 
----
-
 ## Contributing
 
 We welcome contributions to improve the repository.
@@ -74,8 +62,6 @@ We welcome contributions to improve the repository.
 
 By contributing, you help others on their DSA journey. 🚀
 
----
-
 ## Star History
 
 <p align="center">
@@ -83,8 +69,6 @@ By contributing, you help others on their DSA journey. 🚀
     <img src="https://api.star-history.com/svg?repos=SatyamVyas04/STRIVERS_A2Z_DSA&type=Date" width="600" alt="Star History Chart"/>
   </a>
 </p>
-
----
 
 ## License
 
