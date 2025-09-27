@@ -65,8 +65,12 @@ By contributing, you help others on their DSA journey. 🚀
 ## Star History
 
 <p align="center">
-  <a href="https://star-history.com/#SatyamVyas04/STRIVERS_A2Z_DSA&Date">
-    <img src="https://api.star-history.com/svg?repos=SatyamVyas04/STRIVERS_A2Z_DSA&type=Date" width="600" alt="Star History Chart"/>
+  <a href="https://www.star-history.com/#SatyamVyas04/STRIVERS_A2Z_DSA&Timeline">
+   <picture>
+     <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=SatyamVyas04/STRIVERS_A2Z_DSA&type=Timeline&theme=dark" />
+     <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=SatyamVyas04/STRIVERS_A2Z_DSA&type=Timeline" />
+     <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=SatyamVyas04/STRIVERS_A2Z_DSA&type=Timeline" />
+   </picture>
   </a>
 </p>
 
