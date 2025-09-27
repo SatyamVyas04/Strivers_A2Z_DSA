@@ -47,6 +47,20 @@ If you're from CS background, you might have already done this in your college c
 - https://www.youtube.com/watch?v=shs0KM3wKv8&list=PL2q4fbVm1Ik7c3W3JpMZkKXoXcHhSa8lb&index=1
 - https://www.youtube.com/watch?v=KyUTuwz_b7Q&list=PL2q4fbVm1Ik7c3W3JpMZkKXoXcHhSa8lb&index=2
 
+## Important Questions
+
+| Topic           | Rating | Question         | Solution Link                                          | Date          |
+| :-------------- | :----- | :--------------- | :----------------------------------------------------- | :------------ |
+| Basic Maths     | Easy   | GCD or HCF       | [Here](./1.4.%20KnowBasicMaths/4.%20GCDorHCF.py)       | 21st Dec 2023 |
+| Basic Recursion | Easy   | Fibonacci Series | [Here](./1.5.%20LearnBasicRecursion/8.%20Fibonacci.py) | 21st Dec 2023 |
+
 ## That's all :)
 
-> “No matter how much falls on us, we keep plowing ahead. That’s the only way to keep the roads clear.” — Greg Kincaid
+```plaintext
+धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः ।
+मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥
+
+1.1
+```
+
+> On the battlefield of Kurukshetra, both my sons (Kauravas) and the sons of Pandu assembled with a desire to fight.
