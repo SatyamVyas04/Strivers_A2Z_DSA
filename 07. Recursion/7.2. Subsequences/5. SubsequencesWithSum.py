@@ -6,7 +6,7 @@
 '''
 
 
-def subarraysWithSumK(a: [int], k: int) -> [[int]]:
+def subarraysWithSumK(a: list[int], k: int) -> list[list[int]]:
     n = len(a)
     ans = []
     # This will keep all those sub-arrays whose sum = ‘k’.

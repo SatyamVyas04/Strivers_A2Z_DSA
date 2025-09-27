@@ -53,7 +53,7 @@ def mergeSort(arr, low, high):
     return cnt
 
 
-def team(skill: [int], n: int) -> int:
+def team(skill: list[int], n: int) -> int:
     return mergeSort(skill, 0, n - 1)
 
 # Link: https://www.codingninjas.com/studio/problems/team-contest_6840309
